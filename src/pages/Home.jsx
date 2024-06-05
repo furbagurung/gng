@@ -37,7 +37,7 @@ function Home() {
             Discover the secrets of beauty
           </motion.h1>
           <p className=" leading-tight flex justify-center text-[16px] font-medium poppins-regular">
-            Shop now the best bb cream cushion foundation
+            Shop now the best BB cream cushion foundation
           </p>
           <div className="flex justify-center mt-4">
             <Button variant="default" width="200px">
