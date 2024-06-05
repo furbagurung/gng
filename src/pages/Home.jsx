@@ -34,7 +34,7 @@ function Home() {
             animate={{}}
             className="font-bold text-5xl leading-tight font-sf  tracking-tight"
           >
-            Discover the secrets of beauty
+            Discover the secrets of Beauty products
           </motion.h1>
           <p className=" leading-tight flex justify-center text-[16px] font-medium poppins-regular">
             Shop now the best BB cream cushion foundation
