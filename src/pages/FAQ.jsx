@@ -8,7 +8,7 @@ import {
 export const FAQ = () => {
   return (
     <>
-      <div className=" w-[600px] flex justify-center p-4 ">
+      <div className=" w-[600px] flex justify-center px-4 ">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-sf">

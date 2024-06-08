@@ -1,7 +1,15 @@
 import "../App.css";
 import logo from "../assets/logo.svg";
-import { Bars3Icon } from "@heroicons/react/24/solid";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+// import { Bars3Icon } from "@heroicons/react/24/solid";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  ShoppingBagIcon,
+  UserIcon,
+  MagnifyingGlassIcon,
+} from "@heroicons/react/24/outline";
+
+<ShoppingBagIcon class="h-6 w-6 text-gray-500" />;
 
 import NavBar from "../components/ui/NavBar";
 import { useState } from "react";
@@ -17,7 +25,20 @@ function Header() {
             </a>
           </div>
 
-          <div className=" bg-black w-full h-14 md:flex items-center justify-center min-w-[640px] px-[9rem]  ">
+          <div className=" bg-black w-full h-14 flex items-center justify-between px-5 lg:px-[9rem]  ">
+            <nav className="w-fit">
+              {" "}
+              <button
+                type="button"
+                className=" items-center justify-center rounded-md text-white"
+                onClick={() => {
+                  setShow(false);
+                }}
+              >
+                <span className="sr-only">Open main menu</span>
+                <MagnifyingGlassIcon className="h-6 w-6  text-white" />
+              </button>
+            </nav>
             <nav className="hidden lg:flex">
               <ul className="flex items-center justify-center gap-8 text-white text-sm poppins-regular">
                 <li className="relative group px-2 py-2">
@@ -551,7 +572,34 @@ function Header() {
                 </li>
               </ul>
             </nav>
-
+            <nav>
+              <ul className="flex items-center   gap-2">
+                <li>
+                  <button
+                    type="button"
+                    className=" items-center justify-center rounded-md text-white"
+                    onClick={() => {
+                      setShow(false);
+                    }}
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    <ShoppingBagIcon className="h-6 w-6  text-white" />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className=" items-center justify-center rounded-md text-white"
+                    onClick={() => {
+                      setShow(false);
+                    }}
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    <UserIcon className="h-6 w-6  text-white" />
+                  </button>
+                </li>
+              </ul>
+            </nav>
             {/* Mobile Navbar */}
             <div className="flex lg:hidden justify-center h-full items-center">
               {show ? (

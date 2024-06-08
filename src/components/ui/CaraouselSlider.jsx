@@ -18,7 +18,7 @@ import { EffectCoverflow, Navigation, FreeMode } from "swiper/modules";
 
 function CaraouselSlider() {
   return (
-    <div className=" w-full ">
+    <div className=" w-full overflow-clip ">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
