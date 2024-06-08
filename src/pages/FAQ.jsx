@@ -8,10 +8,10 @@ import {
 export const FAQ = () => {
   return (
     <>
-      <div className=" w-[600px] flex justify-center px-4 ">
+      <div className=" w-[600px] flex justify-center  px-4 ">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger className="font-sf">
+            <AccordionTrigger className="font-sf text-left">
               Why choose a sulfate-free cushion foundation?
             </AccordionTrigger>
             <AccordionContent className="fonts-normal poppins-regular text-gray-400">
@@ -22,7 +22,7 @@ export const FAQ = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger className="font-sf">
+            <AccordionTrigger className="font-sf text-left">
               What are the benefits of mineral oil-free foundations?
             </AccordionTrigger>
             <AccordionContent className="fonts-normal poppins-regular text-gray-400">
@@ -32,7 +32,7 @@ export const FAQ = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger className="font-sf">
+            <AccordionTrigger className="font-sf text-left">
               Can cushion foundations provide full coverage?
             </AccordionTrigger>
             <AccordionContent className="fonts-normal poppins-regular text-gray-400">
@@ -42,7 +42,7 @@ export const FAQ = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger className="font-sf">
+            <AccordionTrigger className="font-sf text-left">
               How do I know if a product is cruelty-free?
             </AccordionTrigger>
             <AccordionContent className="fonts-normal poppins-regular text-gray-400">
@@ -52,7 +52,7 @@ export const FAQ = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger className="font-sf">
+            <AccordionTrigger className="font-sf text-left">
               Is cushion foundation better than liquid or powder foundation?
             </AccordionTrigger>
             <AccordionContent className="fonts-normal poppins-regular text-gray-400">

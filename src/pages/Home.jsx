@@ -24,16 +24,16 @@ import ProductCard from "@/components/ui/ProductCard";
 function Home() {
   return (
     <>
-      <section className="h-[450px] md:h-[600px] bg-[#f6f7fb] flex flex-col w-full relative">
+      <section className="h-[450px] md:h-[600px] bg-[#f6f7fb] flex flex-col w-full relative p-4">
         <div className="w-full h-fit flex justify-center">
           <img src={hero} className="md:h-[600px] min-w-46 object-cover"></img>
         </div>
 
-        <div className="w-full grid justify-center grid-rows-auto-rows-fr gap-2 absolute bottom-10 pb-[10px] ">
+        <div className="  w-full grid justify-center items-center gap-1 pt-[100px] absolute bottom-8 p-4">
           <h1 className="font-bold lg:text-5xl text-4xl leading-tight font-sf text-center tracking-tight p-2">
             Discover the secrets of Beauty products
           </h1>
-          <p className=" leading-tight flex justify-center text-[16px] text-center font-medium poppins-regular">
+          <p className=" leading-tight text-center text-[16px] font-medium poppins-regular">
             Shop now the best BB cream cushion foundation
           </p>
           <div className="flex justify-center mt-4">
@@ -49,12 +49,12 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="lg:h-[375px] h-[650px] grid  w-full justify-center relative">
+      <section className="lg:h-[375px] h-[650px] grid  w-full justify-center relative p-4">
         <div className=" lg:w-full grid justify-center gap-2 py-16 mb-6 ">
           <h1 className="font-bold text-4xl  text-center lg:text-5xl leading-tight font-sf tracking-tight">
             Shop our Collection
           </h1>
-          <p className=" leading-tight flex justify-center text-center text-[16px] font-medium poppins-regular">
+          <p className=" leading-tight flex  text-center text-[16px] font-medium poppins-regular">
             Shop now the best bb cream cushion foundation
           </p>
         </div>
@@ -116,12 +116,12 @@ function Home() {
             Best Sellings
           </h1>
           <p className=" leading-tight text-center text-[16px] font-medium poppins-regular">
-            We are committed to environmental sustainability
+            Shop now the best bb cream cushion foundation
           </p>
         </div>
         <div className="flex h-[900px]  justify-center w-full py-16">
           {" "}
-          <div className="lg:flex grid grid-cols-2  h-fit absolute gap-6 w-[400px] lg:w-[800px] z-50">
+          <div className="lg:w-full w-fit lg:flex grid grid-cols-2 justify-center gap-2 p-2">
             {" "}
             <ProductCard
               className="grid"
@@ -148,7 +148,7 @@ function Home() {
         </div>
       </section>
       {/* Certification */}
-      <section className="h-auto flex flex-col bg-white w-full relative pt-[100px] md:pt-[500px] lg:pt-[300px]">
+      <section className="h-auto flex flex-col bg-white w-full relative pt-[50px] md:pt-[500px] lg:pt-[300px]">
         <div className="  w-full grid justify-center grid-rows-auto-rows-fr gap-4 md:pt-[250px] lg:pt-[10px] ">
           <h1 className="font-bold text-5xl text-center leading-tight font-sf tracking-tight">
             Certification
