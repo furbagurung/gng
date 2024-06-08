@@ -1,51 +1,138 @@
-import React from "react";
+import { AppstoreOutlined } from "@ant-design/icons";
 import {
-  HomeTwoTone,
-  AppstoreOutlined,
-  MailOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
+  HomeIcon,
+  PhotoIcon,
+  PhoneArrowDownLeftIcon,
+} from "@heroicons/react/24/outline";
+
 import { Menu } from "antd";
 // import { HomeIcon } from "@heroicons/react/20/solid";
 const items = [
   {
     key: "sub1",
     label: "Home",
-    type: "group",
-    icon: <HomeTwoTone />,
+    icon: <HomeIcon className="h-4 w-4 text-gray-500" />,
   },
   {
     key: "sub2",
     label: "Catalog",
-    icon: <MailOutlined />,
+    icon: <AppstoreOutlined />,
     children: [
       {
         key: "g1",
-        label: "Item 1",
-        type: "group",
+        label: "Face",
+
         children: [
           {
             key: "1",
-            label: "Option 1",
+            label: "Cushion - Foundation",
           },
           {
             key: "2",
-            label: "Option 2",
+            label: "Foundation ",
+          },
+          {
+            key: "3",
+            label: "primer ",
+          },
+          {
+            key: "4",
+            label: "Powder ",
+          },
+          {
+            key: "5",
+            label: "Face Primer ",
+          },
+          {
+            key: "6",
+            label: "Setting Spray ",
+          },
+          {
+            key: "7",
+            label: "Collor Correcting Palette ",
+          },
+          {
+            key: "8",
+            label: "Contour ",
+          },
+          {
+            key: "9",
+            label: "Concealer ",
           },
         ],
       },
       {
         key: "g2",
-        label: "Item 2",
-        type: "group",
+        label: "Cheek",
+
         children: [
           {
-            key: "3",
-            label: "Option 3",
+            key: "10",
+            label: "Blusher",
           },
           {
-            key: "4",
-            label: "Option 4",
+            key: "11",
+            label: "Bronzer",
+          },
+          {
+            key: "12",
+            label: "Highlighter ",
+          },
+        ],
+      },
+      {
+        key: "g3",
+        label: "Eye",
+        children: [
+          {
+            key: "13",
+            label: "Eye Palettes",
+          },
+          {
+            key: "14",
+            label: "Mascara",
+          },
+          {
+            key: "15",
+            label: "Eyeliner",
+          },
+          {
+            key: "16",
+            label: "Eyebrow",
+          },
+          {
+            key: "17",
+            label: "Eyelash",
+          },
+        ],
+      },
+      {
+        key: "g4",
+        label: "Lip",
+        children: [
+          {
+            key: "14",
+            label: "Lip Oil",
+          },
+          {
+            key: "15",
+            label: "Lip Balm",
+          },
+          {
+            key: "16",
+            label: "Lip Sticks",
+          },
+          {
+            key: "17",
+            label: "Lip Gloss",
+          },
+          {
+            key: "18",
+            label: "Lip Liner",
+          },
+          {
+            key: "19",
+            label: "Lip Plumper",
           },
         ],
       },
@@ -53,30 +140,16 @@ const items = [
   },
   {
     key: "sub3",
-    label: "Navigation Two",
-    icon: <AppstoreOutlined />,
+    label: "Gossip Galleries",
+    icon: <PhotoIcon className="h-4 w-4" />,
     children: [
       {
-        key: "5",
-        label: "Option 5",
+        key: "20",
+        label: "Gossip Events",
       },
       {
         key: "6",
-        label: "Option 6",
-      },
-      {
-        key: "sub4",
-        label: "Submenu",
-        children: [
-          {
-            key: "7",
-            label: "Option 7",
-          },
-          {
-            key: "8",
-            label: "Option 8",
-          },
-        ],
+        label: "Gossip Memories",
       },
     ],
   },
@@ -85,41 +158,8 @@ const items = [
   },
   {
     key: "sub5",
-    label: "Navigation Three",
-    icon: <SettingOutlined />,
-    children: [
-      {
-        key: "9",
-        label: "Option 9",
-      },
-      {
-        key: "10",
-        label: "Option 10",
-      },
-      {
-        key: "11",
-        label: "Option 11",
-      },
-      {
-        key: "12",
-        label: "Option 12",
-      },
-    ],
-  },
-  {
-    key: "grp",
-    label: "Group",
-    type: "group",
-    children: [
-      {
-        key: "13",
-        label: "Option 13",
-      },
-      {
-        key: "14",
-        label: "Option 14",
-      },
-    ],
+    label: "Contact Us",
+    icon: <PhoneArrowDownLeftIcon className="h-4 w-4" />,
   },
 ];
 const App = () => {
@@ -127,16 +167,14 @@ const App = () => {
     console.log("click ", e);
   };
   return (
-    <div className="flex: lg:hidden w-full h-fit bg-red-600">
-      <Menu
-        onClick={onClick}
-        style={{
-          width: "100vw",
-        }}
-        mode="inline"
-        items={items}
-      />
-    </div>
+    <Menu
+      onClick={onClick}
+      style={{
+        width: "100vw",
+      }}
+      mode="inline"
+      items={items}
+    />
   );
 };
 export default App;
