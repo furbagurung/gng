@@ -1,7 +1,12 @@
 import "../App.css";
 import logo from "../assets/logo.svg";
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
+import NavBar from "../components/ui/NavBar";
+import { useState } from "react";
 function Header() {
+  const [show, setShow] = useState(false);
   return (
     <>
       <div className="w-full  z-50">
@@ -12,8 +17,8 @@ function Header() {
             </a>
           </div>
 
-          <div className=" bg-black w-full h-14 md:flex items-center justify-center min-w-[640px] px-[9rem] hidden">
-            <nav>
+          <div className=" bg-black w-full h-14 md:flex items-center justify-center min-w-[640px] px-[9rem]  ">
+            <nav className="hidden lg:flex">
               <ul className="flex items-center justify-center gap-8 text-white text-sm poppins-regular">
                 <li className="relative group px-2 py-2">
                   <a
@@ -546,18 +551,35 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            {/* <nav>
-              <ul>
-                <li>
-                  <a href='#' className='rounded-full bg-white bg-opacity-90 px-3 py-2 text-sm font-semibold flex justify-center items-center group'>
-                    <span className='mr-2'>Sign in</span>
 
-
-                  </a>
-                </li>
-              </ul>
-            </nav> */}
+            {/* Mobile Navbar */}
+            <div className="flex lg:hidden justify-center h-full items-center">
+              {show ? (
+                <button
+                  type="button"
+                  className=" items-center justify-center rounded-md text-white"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  <span className="sr-only">Open main menu</span>
+                  <XMarkIcon className="h-6 w-6  text-white" />
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  className=" items-center justify-center rounded-md text-white"
+                  onClick={() => {
+                    setShow(!show);
+                  }}
+                >
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                </button>
+              )}
+            </div>
           </div>
+          <div>{show ? <NavBar /> : null}</div>
         </header>
       </div>
     </>
