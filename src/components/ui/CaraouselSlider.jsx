@@ -31,7 +31,7 @@ function CaraouselSlider() {
           rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 7,
+          modifier: 2,
           slideShadows: true,
         }}
         navigation={{

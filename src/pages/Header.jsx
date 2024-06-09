@@ -17,7 +17,7 @@ function Header() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="w-full  z-50">
+      <div className="w-full min-w-[320px]  z-50">
         <header className="flex flex-col justify-center items-center h-auto z-50">
           <div className="bg-white w-full flex justify-center">
             <a href="#" className=" flex items-center h-10 w-20 my-4">

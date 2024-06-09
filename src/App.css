@@ -3,6 +3,7 @@
 
 #root {
   max-width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   background: #f8edeb;
@@ -121,7 +122,7 @@
 /* swiper
  */
 .swiper_container {
-  width: 48rem;
+  width: 100%;
   height: 25rem;
   padding: 2rem 0;
   position: relative;
@@ -133,10 +134,16 @@
   position: relative;
 }
 
+.swiper-wrapper {
+  overflow: hidden;
+  width: 100% !important;
+  background-color: aqua;
+}
+
 @media (max-width: 500px) {
   .swiper_container {
     /* height: 47rem !important; */
-    width: 20rem !important;
+    width: 10rem;
 
   }
 
