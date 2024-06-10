@@ -49,7 +49,7 @@ function Header() {
                     Home
                   </a>
                 </li>
-                <li className="relative group px-2 py-[10px]">
+                <li className="relative group px-2 py-[20px]">
                   <button
                     className="
                   hover:opacity-50 transition
