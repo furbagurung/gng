@@ -2,7 +2,6 @@ import CategoryCard from "@/components/ui/CategoryCard";
 import { FAQ } from "./FAQ";
 // import CaraouselSlider from "@/components/ui/CaraouselSlider";
 
-import Header from "./Header";
 import Footer from "./Footer";
 
 import "../App.css";
