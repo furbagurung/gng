@@ -1,11 +1,13 @@
 import "../App.css";
 import logo from "../assets/logo.svg";
 
+import { NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 function footer() {
   return (
     <>
-      <footer className="bg-white rounded-lg shadow dark:bg-gray-900 poppins-regular p-4">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <footer className="bg-white rounded-lg shadow  dark:bg-gray-900 poppins-regular p-4">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 font-normal poppins-regular">
           <div className="sm:flex sm:items-center sm:justify-between">
             <a
               href={logo}
@@ -15,24 +17,36 @@ function footer() {
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
+                <NavLink
+                  to="../about"
+                  className="hover:underline me-4 md:me-6 transition ease-in-out duration-200"
+                >
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
+                <NavLink
+                  to="../privacy"
+                  className="hover:underline me-4 md:me-6 transition ease-in-out duration-200"
+                >
                   Privacy Policy
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
+                <NavLink
+                  to="../tnc"
+                  className="hover:underline me-4 md:me-6 transition ease-in-out duration-200"
+                >
                   Terms & Conditions
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <NavLink
+                  to="../contact"
+                  className="hover:underline me-4 md:me-6 transition ease-in-out duration-200"
+                >
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -46,6 +60,9 @@ function footer() {
           </span>
         </div>
       </footer>
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

@@ -6,13 +6,14 @@ import {
   XMarkIcon,
   ShoppingBagIcon,
   UserIcon,
-  MagnifyingGlassIcon,
+  // MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 
 import NavBar from "../components/ui/NavBar";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import Footer from "../pages/Footer";
 // import SearchBar from "@/components/ui/SearchBar";
 
 function Header() {
@@ -477,9 +478,13 @@ function Header() {
                     {/* drop down Ends*/}
                   </li>
                   <li className="relative  group px-2 py-[11px]">
-                    <button className="hover:opacity-50 cursor-pointer transition ease-in-out duration-200 ">
+                    <NavLink
+                      to="gallery"
+                      href="#"
+                      className="hover:opacity-50 transition ease-in-out "
+                    >
                       Gossip Gallery
-                    </button>
+                    </NavLink>
 
                     {/* drop down Start*/}
                     <div
@@ -587,7 +592,13 @@ function Header() {
                       }}
                     >
                       <span className="sr-only">Open main menu</span>
-                      <ShoppingBagIcon className="h-6 w-6  text-white" />
+                      <NavLink
+                        to="cart"
+                        href="#"
+                        className="hover:opacity-50 transition ease-in-out "
+                      >
+                        <ShoppingBagIcon className="h-6 w-6  text-white" />
+                      </NavLink>
                     </button>
                   </li>
                   <li>
