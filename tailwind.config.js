@@ -9,10 +9,6 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-
-    fontFamily: {
-      sf: ['SFPRODISPLAYREGULAR', 'sans-serif',],
-    },
     container: {
       center: true,
       padding: "2rem",

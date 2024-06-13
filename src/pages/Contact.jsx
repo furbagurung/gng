@@ -10,7 +10,6 @@ import {
   MapPinIcon,
   PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/solid";
-import { PhoneCall } from "lucide-react";
 
 import Footer from "./Footer";
 

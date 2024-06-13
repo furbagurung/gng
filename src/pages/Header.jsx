@@ -13,11 +13,13 @@ import NavBar from "../components/ui/NavBar";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+// import SearchBar from "@/components/ui/SearchBar";
 
 function Header() {
   const [show, setShow] = useState(false);
   return (
     <>
+      {/* <SearchBar /> */}
       <div className="w-full min-w-[320px]  z-50">
         <header className="flex flex-col justify-center items-center h-auto z-50">
           <div className="bg-white w-full flex justify-center">
@@ -38,7 +40,7 @@ function Header() {
                   }}
                 >
                   <span className="sr-only">Open main menu</span>
-                  <MagnifyingGlassIcon className="h-6 w-6  text-white" />
+                  {/* <MagnifyingGlassIcon className="h-6 w-6  text-white" /> */}
                 </button>
               </nav>
               <nav className="hidden lg:flex">
@@ -53,14 +55,13 @@ function Header() {
                     </NavLink>
                   </li>
                   <li className="relative group px-2 py-[20px]">
-                    <button
-                      className="
-                  hover:opacity-50 transition
-                  ease-in-out duration-300
-                  group"
+                    <NavLink
+                      to="catalog"
+                      href="#"
+                      className="hover:opacity-50 transition ease-in-out duration-200"
                     >
                       Catalog
-                    </button>
+                    </NavLink>
 
                     {/* drop down Start*/}
                     <div

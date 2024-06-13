@@ -10,12 +10,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Header from "./pages/Header";
+import Catalog from "./pages/Catalog";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Header />}>
       <Route index element={<Home />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="catalog" element={<Catalog />} />
     </Route>
   )
 );
