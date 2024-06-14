@@ -15,6 +15,8 @@ import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Footer from "../pages/Footer";
 // import SearchBar from "@/components/ui/SearchBar";
+import Marquee from "react-fast-marquee";
+import MarqueeElement from "./MarqueeElement";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -23,6 +25,18 @@ function Header() {
       {/* <SearchBar /> */}
       <div className="w-full min-w-[320px]  z-50">
         <header className="flex flex-col justify-center items-center h-auto z-50">
+          <div className="h-9 flex items-center bg-[#d2bab6] w-full">
+            <Marquee
+              pauseOnHover
+              autoFill
+              gradient
+              gradientColor="#d2bab6"
+              gradientWidth={200}
+              className="h-9"
+            >
+              <MarqueeElement />
+            </Marquee>
+          </div>
           <div className="bg-white w-full flex justify-center">
             <a href="#" className=" flex items-center h-10 w-20 my-4">
               <img src={logo} />

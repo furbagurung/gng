@@ -10,6 +10,7 @@ import cushion from "../assets/Cushion.png";
 
 import sulfate from "../assets/sulfate-free.jpg";
 import certificate from "../assets/certificate.png";
+// import CaraouselSlider from "../components/ui/CaraouselSlider";
 
 import faceImg from "../assets/face.jpg";
 import eyeImg from "../assets/eye.jpg";
