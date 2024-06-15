@@ -6,11 +6,12 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { Menu } from "antd";
+import { NavLink } from "react-router-dom";
 // import { HomeIcon } from "@heroicons/react/20/solid";
 const items = [
   {
     key: "sub1",
-    label: "Home",
+    label: <NavLink to="/">Home</NavLink>,
     icon: <HomeIcon className="h-4 w-4 text-gray-500" />,
   },
   {

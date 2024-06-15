@@ -4,22 +4,23 @@ import logo from "../assets/logo.svg";
 import {
   Bars3Icon,
   XMarkIcon,
-  ShoppingBagIcon,
-  UserIcon,
+  // ShoppingBagIcon,
+  // UserIcon,
   // MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 
 import NavBar from "../components/ui/NavBar";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+
 import Footer from "../pages/Footer";
 // import SearchBar from "@/components/ui/SearchBar";
 import Marquee from "react-fast-marquee";
 import MarqueeElement from "./MarqueeElement";
 
 function Header() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false); //for mobilemenu
+
   return (
     <>
       {/* <SearchBar /> */}
@@ -38,9 +39,9 @@ function Header() {
             </Marquee>
           </div>
           <div className="bg-white w-full flex justify-center">
-            <a href="#" className=" flex items-center h-10 w-20 my-4">
+            <NavLink to="#" className=" flex items-center h-10 w-20 my-4">
               <img src={logo} />
-            </a>
+            </NavLink>
           </div>
 
           <div className=" bg-black w-full h-14 flex items-center justify-center lg:px-[9rem] px-6">
@@ -60,24 +61,16 @@ function Header() {
               </nav>
               <nav className="hidden lg:flex">
                 <ul className="flex items-center justify-center gap-8 text-white text-sm poppins-regular">
-                  <li className="relative group px-2 py-2">
+                  <li className="relative group px-2 py-2 ">
                     <NavLink
                       to="/"
-                      href="#"
                       className="hover:opacity-50 transition ease-in-out duration-200"
                     >
                       Home
                     </NavLink>
                   </li>
                   <li className="relative group px-2 py-[20px]">
-                    <NavLink
-                      to="catalog"
-                      href="#"
-                      className="hover:opacity-50 transition ease-in-out duration-200"
-                    >
-                      Catalog
-                    </NavLink>
-
+                    Catalog
                     {/* drop down Start*/}
                     <div
                       className="
@@ -118,8 +111,8 @@ function Header() {
                                   </p>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/cushionfoundation"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -129,11 +122,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Cushion - Foundation
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/foundation"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -144,11 +137,11 @@ function Header() {
                                   >
                                     {" "}
                                     Foundation
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/primer"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -158,11 +151,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Primer
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/powder"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -172,11 +165,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Powder
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/faceprimer"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -186,11 +179,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Face Primer
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/settingspray"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -200,11 +193,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Setting Spray
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/colorcorrectingpalette"
                                     className="  break-after: auto;
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -214,11 +207,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Color Correcting Palette
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/contour"
                                     className="  break-after: auto;
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -228,11 +221,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Contour
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/concealer"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -242,7 +235,7 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Concealer
-                                  </a>
+                                  </NavLink>
                                 </li>
                               </ul>
                             </div>
@@ -260,8 +253,8 @@ function Header() {
                                   </p>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/blusher"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -271,11 +264,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Blusher
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/bronzer"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -285,11 +278,11 @@ function Header() {
                                 block py-1 px-2 -mx-2 font-normal rounded-lg"
                                   >
                                     Bronzer
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/highlighter"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -299,7 +292,7 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Highlighter
-                                  </a>
+                                  </NavLink>
                                 </li>
                               </ul>
 
@@ -313,8 +306,8 @@ function Header() {
                                   </p>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/lipoil"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -324,11 +317,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Lip Oil
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/lipbalm"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -338,11 +331,11 @@ function Header() {
                                 block py-1 px-2 -mx-2 font-normal rounded-lg"
                                   >
                                     Lip balm
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/lipsticks"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -352,11 +345,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Lip Sticks
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/lipgloss"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -366,11 +359,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Lip Gloss
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/lipliner"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -380,11 +373,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Lip Liner
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/lipplumper"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -394,7 +387,7 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Lip Plumper
-                                  </a>
+                                  </NavLink>
                                 </li>
                               </ul>
                             </div>
@@ -412,8 +405,8 @@ function Header() {
                                   </p>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/eyepalletes"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -423,11 +416,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Eye Palletes
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/mascara"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -437,11 +430,11 @@ function Header() {
                                 block py-1 px-2 -mx-2 font-normal rounded-lg"
                                   >
                                     Mascara
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/eyeliner"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -451,11 +444,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Eyeliner
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/eyebrow"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -465,11 +458,11 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Eyebrow
-                                  </a>
+                                  </NavLink>
                                 </li>{" "}
                                 <li>
-                                  <a
-                                    href="#"
+                                  <NavLink
+                                    to="catalog/eyelash"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -479,7 +472,7 @@ function Header() {
                                 block py-1 px-2  -mx-2 font-normal rounded-lg"
                                   >
                                     Eyelash
-                                  </a>
+                                  </NavLink>
                                 </li>
                               </ul>
                             </div>
@@ -493,8 +486,7 @@ function Header() {
                   </li>
                   <li className="relative  group px-2 py-[11px]">
                     <NavLink
-                      to="gallery"
-                      href="#"
+                      to="catalog/gallery"
                       className="hover:opacity-50 transition ease-in-out "
                     >
                       Gossip Gallery
@@ -529,8 +521,8 @@ function Header() {
                           </p>
                           <ul className="mt-3 text-[13px]">
                             <li>
-                              <a
-                                href="#"
+                              <NavLink
+                                to="catalog/gossipevents"
                                 className="
                             block p-2 -mx-2  rounded-lg 
                             text-gray-600
@@ -553,11 +545,11 @@ function Header() {
                                 >
                                   Watch our events
                                 </p>
-                              </a>
+                              </NavLink>
                             </li>
                             <li>
-                              <a
-                                href="#"
+                              <NavLink
+                                to="catalog/gossipmemories"
                                 className="
                             block p-2 -mx-2  rounded-lg 
                             text-gray-600
@@ -580,7 +572,7 @@ function Header() {
                                 >
                                   The Moments we captured
                                 </p>
-                              </a>
+                              </NavLink>
                             </li>
                           </ul>
                         </div>
@@ -597,7 +589,8 @@ function Header() {
               </nav>
               <nav>
                 <ul className="flex items-center gap-6">
-                  <li>
+                  {/* This is shoppin bag cart */}
+                  {/* <li>
                     <button
                       type="button"
                       className=" items-center justify-center rounded-md text-white"
@@ -608,15 +601,25 @@ function Header() {
                       <span className="sr-only">Open main menu</span>
                       <NavLink
                         to="cart"
-                        href="#"
+                        to="#"
                         className="hover:opacity-50 transition ease-in-out "
                       >
                         <ShoppingBagIcon className="h-6 w-6  text-white" />
                       </NavLink>
                     </button>
-                  </li>
+                  </li> */}
                   <li>
-                    <button
+                    {/* <div className="m-40 flex justify-center text-center">
+                      <HoverBorderGradient
+                        containerClassName="rounded-full"
+                        as="button"
+                        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                      >
+                        <span>Aceternity UI</span>
+                      </HoverBorderGradient>
+                    </div> */}
+                    {/* This is user login button */}
+                    {/* <button
                       type="button"
                       className=" items-center justify-center rounded-md text-white"
                       onClick={() => {
@@ -625,7 +628,7 @@ function Header() {
                     >
                       <span className="sr-only">Open main menu</span>
                       <UserIcon className="h-6 w-6  text-white" />
-                    </button>
+                    </button> */}
                   </li>
                 </ul>
               </nav>
@@ -657,9 +660,10 @@ function Header() {
               )}
             </div>
           </div>
+          {/* condition for showing mobile Navbar */}
           <div>{show ? <NavBar /> : null}</div>
         </header>
-        <main>
+        <main className="flex justify-center flex-col">
           <Outlet />
         </main>
       </div>

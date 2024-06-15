@@ -1,7 +1,6 @@
 import CategoryCard from "@/components/ui/CategoryCard";
 import { FAQ } from "./FAQ";
 // import CaraouselSlider from "@/components/ui/CaraouselSlider";
-
 import Footer from "./Footer";
 
 import "../App.css";
@@ -25,7 +24,7 @@ import { Button } from "../components/ui/button";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import ProductCard from "@/components/ui/ProductCard";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <section className="h-[400px] min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
@@ -185,6 +184,6 @@ function Home() {
       <Footer />
     </>
   );
-}
+};
 
 export default Home;
