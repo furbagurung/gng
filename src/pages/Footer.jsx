@@ -60,9 +60,6 @@ function footer() {
           </span>
         </div>
       </footer>
-      <main>
-        <Outlet />
-      </main>
     </>
   );
 }

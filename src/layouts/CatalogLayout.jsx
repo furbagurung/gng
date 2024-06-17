@@ -110,6 +110,102 @@ const CatalogLayout = ({
             </div>
           </div>
         </div>
+        <section className="w-full flex justify-center bg-white">
+          <div className="w-[1440px] h-[864px] px-16 py-28 bg-white flex-col justify-start items-center gap-20 inline-flex">
+            <div className="self-stretch justify-start items-center gap-20 inline-flex">
+              <img
+                className="grow shrink basis-0 h-[640px]"
+                src="https://via.placeholder.com/616x640"
+              />
+              <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
+                <div className="self-stretch h-[234px] flex-col justify-start items-start gap-4 flex">
+                  <div className="text-center text-black text-base font-semibold font-['Roboto'] leading-normal">
+                    Discover
+                  </div>
+                  <div className="self-stretch h-[194px] flex-col justify-start items-start gap-6 flex">
+                    <div className="self-stretch text-black text-5xl font-bold font-['Roboto'] leading-[57.60px]">
+                      Enhance Your Beauty with Our Premium Products
+                    </div>
+                    <div className="self-stretch text-black text-lg font-normal font-['Roboto'] leading-[27px]">
+                      Our product is designed to meet all your makeup needs.
+                      With high-quality ingredients and a wide range of shades,
+                      it's perfect for any occasion.
+                    </div>
+                  </div>
+                </div>
+                <div className="pt-4 justify-start items-center gap-6 inline-flex">
+                  <div className="px-6 py-3 border border-black justify-center items-center gap-2 flex">
+                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
+                      Shop Now
+                    </div>
+                  </div>
+                  <div className="justify-center items-center gap-2 flex">
+                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
+                      Learn More
+                    </div>
+                    <div className="w-6 h-6 relative" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white flex justify-center p-8 pb-24">
+          <div className="w-[1280px] h-[366px] justify-start items-start gap-8 inline-flex">
+            <div className="w-[406px] h-[366px] flex-col justify-start items-start gap-6 inline-flex">
+              <img
+                className="w-[406px] h-[244px] relative rounded-lg"
+                src="https://via.placeholder.com/406x244"
+              />
+              <div className="self-stretch h-[98px] flex-col justify-center items-start gap-1 flex">
+                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
+                  Product{" "}
+                </div>
+                <div className="self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">
+                  Body text for first product
+                </div>
+                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
+                  $10.99
+                </div>
+              </div>
+            </div>
+            <div className="w-[405px] h-[366px] flex-col justify-start items-start gap-6 inline-flex">
+              <img
+                className="w-[405px] h-[244px] relative rounded-lg"
+                src="https://via.placeholder.com/405x244"
+              />
+              <div className="self-stretch h-[98px] flex-col justify-center items-start gap-1 flex">
+                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
+                  Product
+                </div>
+                <div className="self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">
+                  Body text for second product
+                </div>
+                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
+                  $10.99
+                </div>
+              </div>
+            </div>
+            <div className="w-[405px] h-[366px] flex-col justify-start items-start gap-6 inline-flex">
+              <img
+                className="w-[405px] h-[244px] relative rounded-lg"
+                src="https://via.placeholder.com/405x244"
+              />
+              <div className="self-stretch h-[98px] flex-col justify-center items-start gap-1 flex">
+                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
+                  Product
+                </div>
+                <div className="self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">
+                  Body text for third product
+                </div>
+                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
+                  $10.99
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="text-white bg-black flex flex-col w-full relative pb-11 p-4 ">
           <div className="  w-full grid gap-4 py-16 ">
             <h1 className="font-bold md:text-4xl text-3xl justify-center lg:text-center text-left leading-tight  poppins-bold racking-tight">
@@ -122,6 +218,7 @@ const CatalogLayout = ({
               gossipandgiggles@gmail.com
             </p>
           </div>
+
           <div className="w-full flex justify-center">
             <FAQ />
           </div>

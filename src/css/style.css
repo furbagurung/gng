@@ -1,0 +1,13 @@
+body {
+    height: 300vh;
+    background: #000;
+}
+
+canvas {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100vh;
+}

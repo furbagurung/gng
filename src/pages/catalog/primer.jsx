@@ -1,4 +1,3 @@
-import Footer from "../Footer";
 import CatalogLayout from "../../layouts/CatalogLayout";
 const Contact = () => {
   const description =
@@ -6,7 +5,6 @@ const Contact = () => {
   return (
     <>
       <CatalogLayout title="Primer" description={description} />
-      <Footer />
     </>
   );
 };

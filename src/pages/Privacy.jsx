@@ -13,7 +13,6 @@ function Privacy() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

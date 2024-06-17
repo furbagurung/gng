@@ -1,4 +1,5 @@
 import Footer from "../Footer";
+
 import CatalogLayout from "../../layouts/CatalogLayout";
 const CushionFoundation = () => {
   const description =

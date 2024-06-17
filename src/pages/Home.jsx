@@ -111,6 +111,104 @@ const Home = () => {
           <img src={sulfate}></img>
         </div>
       </section>
+
+      <section
+        className="w-full flex justify-center bg-slate-100
+      "
+      >
+        <div className="w-[1634px] h-[900px] relative">
+          <div className="w-[1600px]  left-[34px] top-0 absolute bg-slate-100" />
+          <div className="w-[1110px] h-32 left-[279px] top-[902px] absolute"></div>
+          <div className="w-[409px] h-[134px] left-[849px] top-[351px] absolute">
+            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
+              Organized tasks
+            </div>
+            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next landing page.
+            </div>
+            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
+              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-red-500 rounded-[15px]" />
+              <div className="w-[35px] h-[37px] left-[22px] top-[21px] absolute"></div>
+            </div>
+          </div>
+          <div className="w-[409px] h-[134px] left-[390px] top-[351px] absolute">
+            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
+              Dedicated project manager
+            </div>
+            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next landing page.
+            </div>
+            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
+              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-indigo-600 rounded-[15px]" />
+              <div className="w-[35px] h-[38px] left-[22px] top-[21px] absolute">
+                <img
+                  className="w-5 h-[23px] left-[8px] top-0 absolute"
+                  src="https://via.placeholder.com/20x23"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-[409px] h-[134px] left-[849px] top-[565px] absolute">
+            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
+              Never miss deadline
+            </div>
+            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next landing page.
+            </div>
+            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
+              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-gray-900 rounded-[15px]" />
+              <div className="w-9 h-9 left-[22px] top-[22px] absolute">
+                <img
+                  className="w-9 h-9 left-0 top-0 absolute opacity-50"
+                  src="https://via.placeholder.com/36x36"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-[409px] h-[134px] left-[390px] top-[565px] absolute">
+            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
+              Easy feedback sharing
+            </div>
+            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
+              With lots of unique blocks, you can easily build a page without
+              coding. Build your next landing page.
+            </div>
+            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
+              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-green-400 rounded-[15px]" />
+              <div className="w-9 h-[34px] left-[22px] top-[23px] absolute"></div>
+            </div>
+          </div>
+          <div className="w-[589px] h-[135px] left-[540px] top-[118px] absolute flex-col justify-center items-center gap-[23px] inline-flex">
+            <div className="w-[589px] text-center text-red-500 text-[13px] font-bold   uppercase tracking-widest">
+              Why choose us
+            </div>
+            <div className="w-[521px] text-center text-gray-900 text-4xl font-bold   leading-[48px]">
+              People choose us because we serve the best for everyone
+            </div>
+          </div>
+          <div className="w-[123px] h-28 left-0 top-[167px] absolute">
+            <div className="w-[7px] h-2 left-[116px] top-[13px] absolute"></div>
+            <div className="w-[7px] h-[7px] left-[116px] top-0 absolute"></div>
+            <div className="w-[7px] h-[7px] left-[116px] top-[27px] absolute"></div>
+            <div className="w-[7px] h-[7px] left-[116px] top-[40px] absolute"></div>
+            <div className="w-[7px] h-[7px] left-[116px] top-[53px] absolute"></div>
+            <div className="w-[7px] h-[7px] left-[116px] top-[66px] absolute"></div>
+            <div className="w-[7px] h-2 left-[116px] top-[79px] absolute"></div>
+            <div className="w-[7px] h-[7px] left-[116px] top-[93px] absolute"></div>
+            <div className="w-1.5 h-1.5 left-0 top-[106px] absolute"></div>
+            <div className="w-2 h-1.5 left-[32px] top-[106px] absolute"></div>
+            <div className="w-[7px] h-1.5 left-[16px] top-[106px] absolute"></div>
+            <div className="w-[7px] h-1.5 left-[49px] top-[106px] absolute"></div>
+            <div className="w-[7px] h-1.5 left-[66px] top-[106px] absolute"></div>
+            <div className="w-[7px] h-1.5 left-[99px] top-[106px] absolute"></div>
+            <div className="w-2 h-1.5 left-[82px] top-[106px] absolute"></div>
+            <div className="w-[7px] h-1.5 left-[116px] top-[106px] absolute"></div>
+          </div>
+        </div>
+      </section>
       {/* Best Selling */}
       <section className=" h-fit flex flex-col relative  w-full items-center p-4">
         <div className="  w-full flex flex-col justify-center items-center gap-4 pt-[100px]">
@@ -181,7 +279,6 @@ const Home = () => {
           <FAQ />
         </div>
       </section>
-      <Footer />
     </>
   );
 };

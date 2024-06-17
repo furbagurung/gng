@@ -1,4 +1,3 @@
-import Footer from "../Footer";
 import CatalogLayout from "../../layouts/CatalogLayout";
 
 function foundation() {
@@ -7,7 +6,6 @@ function foundation() {
   return (
     <>
       <CatalogLayout title="Foundation" description={description} />
-      <Footer />
     </>
   );
 }

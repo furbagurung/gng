@@ -13,7 +13,6 @@ function Gallery() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

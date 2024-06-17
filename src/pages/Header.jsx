@@ -665,6 +665,7 @@ function Header() {
         </header>
         <main className="flex justify-center flex-col">
           <Outlet />
+          <Footer />
         </main>
       </div>
     </>
