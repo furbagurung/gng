@@ -1,13 +1,10 @@
-import Footer from "../Footer";
-
 import CatalogLayout from "../../layouts/CatalogLayout";
 const CushionFoundation = () => {
   const description =
-    "Lipstick, a beloved cosmetic product, adds color and moisture to the lips, enhancing their natural beauty.  Available in a wide range of shades and finishes, lipsticks offer endless possibilities for creating different looks and styles.  They come in creamy, matte, satin, and glossy formulas, providing options for various preferences and occasions.  Lipsticks are known for their pigmentation, smooth application, and long-lasting wear.  With a single swipe, they can transform the lips, adding a touch of glamour and completing any makeup look.  From bold and vibrant to subtle and natural, lipsticks are a staple in every makeup collection, allowing individuals to express their personal style and boost their confidence.";
+    "Gossip and Giggles skin perfecting 24hr long-wear high perfection BB cushion with buildable matte finish in just one stamp application. Flawless buildable coverage: Get 24hrs non-stop, luminous matte finish for a smooth and healthier looking skin. Long wear obsession: It’s lightweight texture blends into the skin providing a fresh’ radiant and moisturizing sensation. Skin perfection: It’s unique formulation helps cover skin blemishes giving 24hrs matte blurring effect for effortless touch up on the go. Non-comedogenic.";
   return (
     <>
       <CatalogLayout title="Cushion Foundation" description={description} />
-      <Footer />
     </>
   );
 };

@@ -335,7 +335,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipsticks"
+                                    to="catalog/lipstick"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50

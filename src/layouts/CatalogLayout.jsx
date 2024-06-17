@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import CategoryCard from "@/components/ui/CategoryCard";
 import { FAQ } from "@/pages/FAQ";
+import { Section } from "lucide-react";
 import PropTypes from "prop-types";
 const CatalogLayout = ({
   title,
@@ -10,21 +12,27 @@ const CatalogLayout = ({
   img5,
   price,
   description,
+  features,
 }) => {
   CatalogLayout.propTypes = {
     title: PropTypes.string.isRequired,
-    pathname: PropTypes.string.isRequired,
+    img1: PropTypes.string,
+    img2: PropTypes.string,
+    img3: PropTypes.string,
+    img4: PropTypes.string,
+    img5: PropTypes.string,
+    description: PropTypes.string,
+    features: PropTypes.object,
   };
   return (
     <>
-      <div className="flex flex-col  ">
-        <div className="grid sm:flex flex-col justify-center sm:gap-10">
-          <div className="sm:py-8 grid justify-center border">
-            {" "}
-            <div className=" text-4xl poppins-extrabold text-center ">
+      <div className="flex flex-col poppins-regular  ">
+        <div className=" py-8 grid justify-center sm:gap-10">
+          <div className="sm:py-8 grid sm:w-full max-w-[1440px] w-[316px] justify-center">
+            <div className="py-2 text-4xl poppins-extrabold  text-left sm:text-center">
               <h1>{title}</h1>
             </div>
-            <div className="text-center flex justify-center  w-[320px] sm:w-full p-4">
+            <div className=" sm:text-center flex justify-center w-[320px] sm:w-full">
               <p>
                 Ready to start your next project with us? That&apos;s great!
                 Send us an message
@@ -32,179 +40,139 @@ const CatalogLayout = ({
             </div>
           </div>
         </div>
-        <div className="w-full flex  bg-white justify-center">
-          <div className=" max-w-[1440px]  flex-col justify-center items-center gap-6 inline-flex">
-            <div className="self-stretch  p-8 flex-col justify-center items-start gap-12 flex ">
-              <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="w-[1312px] justify-center items-start gap-4 inline-flex">
-                  <div className="w-[648px] h-[624px] justify-center items-center flex">
-                    <img
-                      className="grow shrink basis-0 self-stretch"
-                      src="https://via.placeholder.com/648x624"
-                    />
-                  </div>
-                  <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
-                    <div className="self-stretch h-[304px] justify-start items-start gap-4 inline-flex">
-                      <img
-                        className="grow shrink basis-0 self-stretch"
-                        src="https://via.placeholder.com/316x304"
-                      />
-                      <img
-                        className="grow shrink basis-0 self-stretch"
-                        src="https://via.placeholder.com/316x304"
-                      />
-                    </div>
-                    <div className="self-stretch h-[304px] justify-start items-start gap-4 inline-flex">
-                      <img
-                        className="grow shrink basis-0 self-stretch"
-                        src="https://via.placeholder.com/316x304"
-                      />
-                      <div className="w-[316px] h-[304px] relative">
-                        <img
-                          className="w-[316px] h-[304px] left-0 top-0 absolute"
-                          src="https://via.placeholder.com/316x304"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch justify-start items-start gap-20 inline-flex">
-                <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex">
-                  <div className="self-stretch text-black text-[40px] font-bold   leading-[48px]">
-                    Gossip and Giggles {title}
-                  </div>
-                  <div className="flex-col justify-start items-start gap-8 flex">
-                    <div className="flex-col justify-start items-start gap-4 flex">
-                      <div className="w-[832px] text-black text-base font-normal   leading-normal">
-                        {description}
-                      </div>
-                    </div>
-                    <div className="flex-col justify-start items-start gap-6 flex">
-                      <div className="self-stretch pt-2 justify-start items-start gap-6 inline-flex">
-                        <div className="flex-col justify-start items-start gap-2 inline-flex"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-[400px] flex-col justify-start items-start gap-6 inline-flex">
-                  <div className="self-stretch h-[42px] flex-col justify-start items-start gap-2 flex">
-                    <div className="self-stretch text-black text-[32px] font-bold   leading-[41.60px]">
-                      Rs. 55{" "}
-                    </div>
-                  </div>
 
-                  <div className="w-full flex-col justify-center items-start gap-6 flex">
-                    <div className="flex-col justify-center items-start gap-4 flex  ">
-                      <div className="h-[120px]  pt-2 flex-col justify-start items-start gap-4 flex">
-                        <Button className="self-stretch px-6 py-3  bg-black border border-black justify-start items-center gap-2 inline-flex">
-                          <div className=" text-base font-normal   leading-normal">
-                            Contact Us for Bulk Order
-                          </div>
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
+        <section className="flex flex-col justify-center items-center gap-4 over sm:w-full p-8 bg-white ">
+          <div className="w-full max-w-[1280px] justify-center grid items-center gap-4 sm:flex my-8">
+            {/* mainimage */}
+            <div className=" w-[316px] lg:w-[400px] xl:w[688px] shrink-0 justify-center items-center flex">
+              <img
+                className="grow shrink basis-0 self-stretch"
+                src="https://via.placeholder.com/648x624"
+              />
+            </div>
+            {/* sub images */}
+            <div className="p-0 sm:p-4 flex-col w-fit justify-center items-start gap-4 grid sm:flex">
+              <div className=" h-fit max-h-[304px] justify-start items-start gap-4 flex">
+                <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
+                  <img src="https://via.placeholder.com/316x304" />
+                </div>
+                <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
+                  <img src="https://via.placeholder.com/316x304" />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <section className="w-full flex justify-center bg-white">
-          <div className="w-[1440px] h-[864px] px-16 py-28 bg-white flex-col justify-start items-center gap-20 inline-flex">
-            <div className="self-stretch justify-start items-center gap-20 inline-flex">
-              <img
-                className="grow shrink basis-0 h-[640px]"
-                src="https://via.placeholder.com/616x640"
-              />
-              <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-                <div className="self-stretch h-[234px] flex-col justify-start items-start gap-4 flex">
-                  <div className="text-center text-black text-base font-semibold font-['Roboto'] leading-normal">
-                    Discover
-                  </div>
-                  <div className="self-stretch h-[194px] flex-col justify-start items-start gap-6 flex">
-                    <div className="self-stretch text-black text-5xl font-bold font-['Roboto'] leading-[57.60px]">
-                      Enhance Your Beauty with Our Premium Products
-                    </div>
-                    <div className="self-stretch text-black text-lg font-normal font-['Roboto'] leading-[27px]">
-                      Our product is designed to meet all your makeup needs.
-                      With high-quality ingredients and a wide range of shades,
-                      it's perfect for any occasion.
-                    </div>
-                  </div>
+              <div className=" h-fit max-h-[304px] justify-start items-start gap-4 flex">
+                <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
+                  <img src="https://via.placeholder.com/316x304" />
                 </div>
-                <div className="pt-4 justify-start items-center gap-6 inline-flex">
-                  <div className="px-6 py-3 border border-black justify-center items-center gap-2 flex">
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Shop Now
-                    </div>
-                  </div>
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Learn More
-                    </div>
-                    <div className="w-6 h-6 relative" />
-                  </div>
+                <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
+                  <img src="https://via.placeholder.com/316x304" />
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section className="flex flex-col justify-start items-center gap-4 min-w-[300px] p-12 sm:p-8 bg-white sm:w-full ">
+          {/* content start */}
+          <div>
+            <div className="w-full justify-start min-w-[300px] max-w-[832px] grid gap-4">
+              {" "}
+              {/* title */}
+              <div className=" text-black text-3xl sm:text-4xl poppins-regular font-bold ">
+                Gossip and Giggles {title}
+              </div>
+              {/* price cta start */}
+              <div className="flex-col justify-start gap-4 items-start flex">
+                <div className="grid ">
+                  <p className=" text-black text-base font-regular ">
+                    $ {price}.00 USD
+                  </p>
+                </div>
+                <div className="w-full max-w-60 flex-col justify-start items-start mb-6 flex">
+                  <Button className="self-stretch px-6 py-3  bg-black border border-black justify-center items-center gap-2 inline-flex">
+                    Business Inquries
+                  </Button>
+                </div>
+              </div>
+              {/* price cta end */}
+            </div>
 
-        <section className="bg-white flex justify-center p-8 pb-24">
-          <div className="w-[1280px] h-[366px] justify-start items-start gap-8 inline-flex">
-            <div className="w-[406px] h-[366px] flex-col justify-start items-start gap-6 inline-flex">
-              <img
-                className="w-[406px] h-[244px] relative rounded-lg"
-                src="https://via.placeholder.com/406x244"
-              />
-              <div className="self-stretch h-[98px] flex-col justify-center items-start gap-1 flex">
-                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
-                  Product{" "}
-                </div>
-                <div className="self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">
-                  Body text for first product
-                </div>
-                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
-                  $10.99
-                </div>
+            {/* description start*/}
+
+            <div className="flex-col justify-start items-start gap-16 max-w-[832px] flex">
+              <div className="sm:w-full min-w-[300px] text-black text-base font-normal leading-normal">
+                {description}
+              </div>
+              <div className="sm:w-full min-w-[300px]  text-black text-base font-normal leading-normal">
+                <h2 className="text-xl font-semibold">
+                  Features of Gossip & Giggles {title}:
+                </h2>
+                <ul className="pl-4 p-2 list-disc">{features}</ul>
               </div>
             </div>
-            <div className="w-[405px] h-[366px] flex-col justify-start items-start gap-6 inline-flex">
-              <img
-                className="w-[405px] h-[244px] relative rounded-lg"
-                src="https://via.placeholder.com/405x244"
-              />
-              <div className="self-stretch h-[98px] flex-col justify-center items-start gap-1 flex">
-                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
-                  Product
-                </div>
-                <div className="self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">
-                  Body text for second product
-                </div>
-                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
-                  $10.99
-                </div>
+            <div className="flex-col justify-start items-start gap-6 flex">
+              <div className="self-stretch pt-2 justify-start items-start gap-6 inline-flex">
+                <div className="flex-col justify-start items-start gap-2 inline-flex"></div>
               </div>
             </div>
-            <div className="w-[405px] h-[366px] flex-col justify-start items-start gap-6 inline-flex">
+
+            {/* description end*/}
+
+            {/* content end */}
+          </div>
+        </section>
+
+        <section className="flex flex-col justify-center items-center gap-4 bg-black  sm:w-full p-4 py-16">
+          <div className="sm:w-full max-w-[900px]  gap-9 flex-wrap md:flex-nowrap justify-center items-center flex ">
+            <div className="">
               <img
-                className="w-[405px] h-[244px] relative rounded-lg"
-                src="https://via.placeholder.com/405x244"
+                className="object-cover"
+                src="https://via.placeholder.com/616x640"
               />
-              <div className="self-stretch h-[98px] flex-col justify-center items-start gap-1 flex">
-                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
-                  Product
+            </div>
+
+            <div className="p-4 flex-col text-white w-full justify-start items-start flex">
+              <div className="text-center text-white text-base font-semibold  py-4">
+                Discover
+              </div>
+              <div className="self-stretch  flex-col justify-center items-start gap-6 flex">
+                <div className="self-stretch text-xl sm:text-3xl font-bold  ">
+                  Enhance Your Beauty with Our Premium Products
                 </div>
-                <div className="self-stretch text-zinc-500 text-xl font-medium font-['Inter'] leading-[30px]">
-                  Body text for third product
+                <div className="self-stretch text-base font-normal ">
+                  Our product is designed to meet all your makeup needs. With
+                  high-quality ingredients and a wide range of shades, it&apos;s
+                  perfect for any occasion.
                 </div>
-                <div className="self-stretch text-black text-xl font-medium font-['Inter'] leading-[30px]">
-                  $10.99
-                </div>
+              </div>
+              <div className="flex py-8">
+                <Button variant="outline" className="text-black">
+                  Shop Now
+                </Button>
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="grid grid-cols-2 sm:flex justify-center items-center gap-4 bg-white  sm:w-full p-4 py-16">
+          <div className="col-span-2 text-2xl font-semibold p-4">
+            <h2>Explore other Categories</h2>
+          </div>
+          <CategoryCard
+            title="Face"
+            src="https://via.placeholder.com/616x640"
+          />
+          <CategoryCard
+            title="Face"
+            src="https://via.placeholder.com/616x640"
+          />{" "}
+          <CategoryCard
+            title="Face"
+            src="https://via.placeholder.com/616x640"
+          />{" "}
+          <CategoryCard
+            title="Face"
+            src="https://via.placeholder.com/616x640"
+          />
         </section>
         <section className="text-white bg-black flex flex-col w-full relative pb-11 p-4 ">
           <div className="  w-full grid gap-4 py-16 ">
