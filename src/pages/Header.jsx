@@ -39,7 +39,7 @@ function Header() {
             </Marquee>
           </div>
           <div className="bg-white w-full flex justify-center">
-            <NavLink to="#" className=" flex items-center h-10 w-20 my-4">
+            <NavLink to="/" className=" flex items-center h-10 w-20 my-4">
               <img src={logo} />
             </NavLink>
           </div>

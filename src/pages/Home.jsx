@@ -98,7 +98,7 @@ const Home = () => {
       </section>
 
       {/* sustainable */}
-      <section className="lg:h-[600px] h-[450px] bg-white flex flex-col w-full relative md:pt-[50px] p-4 ">
+      <section className="lg:h-[600px] h-[350px] sm:h-[450px] bg-white flex flex-col w-full relative md:pt-[50px] p-4 ">
         <div className="  w-full grid justify-center grid-rows-auto-rows-fr gap-4 pt-32">
           <h1 className="font-bold text-3xl lg:text-4xl leading-tight text-center  poppins-bold  tracking-tight">
             Sustainable Beauty
@@ -107,12 +107,15 @@ const Home = () => {
             We are committed to environmental sustainability
           </p>
         </div>
-        <div className="w-full mix-blend-multiply flex justify-center py-10">
-          <img src={sulfate}></img>
+        <div className="sm:w-full  mix-blend-multiply flex  object-cover justify-center overflow-clip py-10">
+          <img
+            src={sulfate}
+            className="object-cover transform scale-150 sm:scale-100"
+          ></img>
         </div>
       </section>
 
-      <section
+      {/* <section
         className="w-full flex justify-center bg-slate-100
       "
       >
@@ -208,7 +211,7 @@ const Home = () => {
             <div className="w-[7px] h-1.5 left-[116px] top-[106px] absolute"></div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Best Selling */}
       <section className=" h-fit flex flex-col relative  w-full items-center p-4">
         <div className="  w-full flex flex-col justify-center items-center gap-4 pt-[100px]">

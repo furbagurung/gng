@@ -153,9 +153,9 @@ const CatalogLayout = ({
           </div>
         </section>
 
-        <section className="grid grid-cols-2 sm:flex justify-center items-center gap-4 bg-white  sm:w-full p-4 py-16">
-          <div className="col-span-2 text-2xl font-semibold p-4">
-            <h2>Explore other Categories</h2>
+        <section className="grid grid-cols-2 sm:flex flex-wrap justify-center items-center gap-4 bg-white sm:w-full p-4 py-16">
+          <div className="col-span-2 w-full text-2xl flex justify-center  font-semibold p-4">
+            <h2 className="w-[800px]">Explore other Categories</h2>
           </div>
           <CategoryCard
             title="Face"
