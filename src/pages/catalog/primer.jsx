@@ -6,7 +6,7 @@ import i3 from "../../assets/primer/primer3.webp";
 import i4 from "../../assets/primer/primer4.webp";
 import i5 from "../../assets/primer/primer5.webp";
 
-function primer() {
+function Primer() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function primer() {
   );
 }
 
-export default primer;
+export default Primer;

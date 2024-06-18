@@ -6,7 +6,7 @@ import i3 from "../../assets/eyebrow/eyebrow3.webp";
 import i4 from "../../assets/eyebrow/eyebrow4.webp";
 import i5 from "../../assets/eyebrow/eyebrow5.webp";
 
-function eyebrow() {
+function Eyebrow() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function eyebrow() {
   );
 }
 
-export default eyebrow;
+export default Eyebrow;

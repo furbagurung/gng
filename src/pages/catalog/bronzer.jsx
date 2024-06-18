@@ -6,7 +6,7 @@ import i3 from "../../assets/blusher/blusher3.webp";
 import i4 from "../../assets/blusher/blusher4.webp";
 import i5 from "../../assets/blusher/blusher5.webp";
 
-function bronzer() {
+function Bronzer() {
   const description = () => {
     return (
       <>
@@ -39,4 +39,4 @@ function bronzer() {
   );
 }
 
-export default bronzer;
+export default Bronzer;

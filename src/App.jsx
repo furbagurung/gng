@@ -17,32 +17,32 @@ import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 
 import Tnc from "./pages/Tnc";
-import CushionFoundation from "./pages/catalog/cushionfoundation";
-import Foundation from "./pages/catalog/foundation";
-import Primer from "./pages/catalog/primer";
-import Facepowder from "./pages/catalog/facepowder";
-import Blusher from "./pages/catalog/blusher";
-import Bronzer from "./pages/catalog/bronzer";
-import Colorcorrectingpalette from "./pages/catalog/colorcorrectingpalette";
-import Concealer from "./pages/catalog/concealer";
-import Contour from "./pages/catalog/contour";
-import Eyebrow from "./pages/catalog/eyebrow";
-import Eyelash from "./pages/catalog/eyelash";
-import Eyepalletes from "./pages/catalog/eyepalletes";
-import Eyeliner from "./pages/catalog/eyeliner";
-import Faceprimer from "./pages/catalog/faceprimer";
-import Gossipevents from "./pages/catalog/gossipevents";
-import Gossipmemories from "./pages/catalog/gossipmemories";
-import Highlighter from "./pages/catalog/highlighter";
-import Lipbalm from "./pages/catalog/lipbalm";
-import Lipgloss from "./pages/catalog/lipgloss";
-import Lipliner from "./pages/catalog/lipliner";
-import Lipoil from "./pages/catalog/lipoil";
-import Lipplumper from "./pages/catalog/lipplumper";
-import Lipstick from "./pages/catalog/lipstick";
-import Mascara from "./pages/catalog/mascara";
+import CushionFoundation from "./pages/catalog/Cushionfoundation";
+import Foundation from "./pages/catalog/Foundation";
+import Primer from "./pages/catalog/Primer";
+import Facepowder from "./pages/catalog/Facepowder";
+import Blusher from "./pages/catalog/Blusher";
+import Bronzer from "./pages/catalog/Bronzer";
+import Colorcorrectingpalette from "./pages/catalog/Colorcorrectingpalette";
+import Concealer from "./pages/catalog/Concealer";
+import Contour from "./pages/catalog/Contour";
+import Eyebrow from "./pages/catalog/Eyebrow";
+import Eyelash from "./pages/catalog/Eyelash";
+import Eyepalletes from "./pages/catalog/Eyepalletes";
+import Eyeliner from "./pages/catalog/Eyeliner";
+import Faceprimer from "./pages/catalog/Faceprimer";
+import Gossipevents from "./pages/catalog/Gossipevents";
+import Gossipmemories from "./pages/catalog/Gossipmemories";
+import Highlighter from "./pages/catalog/Highlighter";
+import Lipbalm from "./pages/catalog/Lipbalm";
+import Lipgloss from "./pages/catalog/Lipgloss";
+import Lipliner from "./pages/catalog/Lipliner";
+import Lipoil from "./pages/catalog/Lipoil";
+import Lipplumper from "./pages/catalog/Lipplumper";
+import Lipstick from "./pages/catalog/Lipstick";
+import Mascara from "./pages/catalog/Mascara";
 
-import SettingSpray from "./pages/catalog/settingspray";
+import SettingSpray from "./pages/catalog/Settingspray";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

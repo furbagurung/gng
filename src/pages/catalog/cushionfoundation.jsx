@@ -6,7 +6,7 @@ import i3 from "../../assets/cushion/cushion3.webp";
 import i4 from "../../assets/cushion/cushion4.webp";
 import i5 from "../../assets/cushion/cushion5.webp";
 
-function cushionfoundation() {
+function Cushionfoundation() {
   const description = () => {
     return (
       <>
@@ -39,4 +39,4 @@ function cushionfoundation() {
   );
 }
 
-export default cushionfoundation;
+export default Cushionfoundation;

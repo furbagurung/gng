@@ -6,7 +6,7 @@ import i3 from "../../assets/contour/contour3.jpg";
 import i4 from "../../assets/contour/contour4.webp";
 import i5 from "../../assets/contour/contour5.webp";
 
-function contour() {
+function Contour() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function contour() {
   );
 }
 
-export default contour;
+export default Contour;

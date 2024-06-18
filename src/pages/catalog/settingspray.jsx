@@ -6,7 +6,7 @@ import i3 from "../../assets/settingspray/settingspray2.jpg";
 import i4 from "../../assets/settingspray/settingspray4.jpg";
 import i5 from "../../assets/settingspray/settingspray5.jpg";
 
-function settingspray() {
+function Settingspray() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function settingspray() {
   );
 }
 
-export default settingspray;
+export default Settingspray;

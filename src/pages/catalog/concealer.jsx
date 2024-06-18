@@ -6,7 +6,7 @@ import i3 from "../../assets/concealer/concealer3.webp";
 import i4 from "../../assets/concealer/concealer4.webp";
 import i5 from "../../assets/concealer/concealer5.webp";
 
-function concealer() {
+function Concealer() {
   const description = () => {
     return (
       <>
@@ -39,4 +39,4 @@ function concealer() {
   );
 }
 
-export default concealer;
+export default Concealer;
