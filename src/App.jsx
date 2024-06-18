@@ -1,6 +1,6 @@
 // import MobileHeader from "./pages/MobileHeader";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
 
 import "./App.css";
 import {
@@ -9,40 +9,39 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import Header from "./pages/Header";
+import Header from "./pages/Header.jsx";
 
-import Gallery from "./pages/Gallery";
-import Cart from "./pages/Cart";
-import About from "./pages/About";
-import Privacy from "./pages/Privacy";
+import Gallery from "./pages/Gallery.jsx";
+import Cart from "./pages/Cart.jsx";
+import About from "./pages/About.jsx";
+import Privacy from "./pages/Privacy.jsx";
 
-import Tnc from "@/pages/Tnc";
-import Cushionfoundation from "@/pages/catalog/cushionfoundation";
-import Foundation from "@/pages/catalog/Foundation";
-import Primer from "@/pages/catalog/Primer";
-import Facepowder from "@/pages/catalog/Facepowder";
-import Blusher from "@/pages/catalog/Blusher";
-import Bronzer from "@/pages/catalog/Bronzer";
-import Colorcorrectingpalette from "@/pages/catalog/Colorcorrectingpalette";
-import Concealer from "@/pages/catalog/Concealer";
-import Contour from "@/pages/catalog/Contour";
-import Eyebrow from "@/pages/catalog/Eyebrow";
-import Eyelash from "@/pages/catalog/Eyelash";
-import Eyepalletes from "@/pages/catalog/Eyepalletes";
-import Eyeliner from "@/pages/catalog/Eyeliner";
-import Faceprimer from "@/pages/catalog/Faceprimer";
-import Gossipevents from "@/pages/catalog/Gossipevents";
-import Gossipmemories from "@/pages/catalog/Gossipmemories";
-import Highlighter from "@/pages/catalog/Highlighter";
-import Lipbalm from "@/pages/catalog/Lipbalm";
-import Lipgloss from "@/pages/catalog/Lipgloss";
-import Lipliner from "@/pages/catalog/Lipliner";
-import Lipoil from "@/pages/catalog/Lipoil";
-import Lipplumper from "@/pages/catalog/Lipplumper";
-import Lipstick from "@/pages/catalog/Lipstick";
-import Mascara from "@/pages/catalog/Mascara";
-
-import SettingSpray from "@/pages/catalog/Settingspray";
+import Tnc from "@/pages/Tnc.jsx";
+import Cushionfoundation from "@/pages/catalog/cushionfoundation.jsx";
+import Foundation from "@/pages/catalog/Foundation.jsx";
+import Primer from "@/pages/catalog/Primer.jsx";
+import Facepowder from "@/pages/catalog/Facepowder.jsx";
+import Blusher from "@/pages/catalog/Blusher.jsx";
+import Bronzer from "@/pages/catalog/Bronzer.jsx";
+import Colorcorrectingpalette from "@/pages/catalog/Colorcorrectingpalette.jsx";
+import Concealer from "@/pages/catalog/Concealer.jsx";
+import Contour from "@/pages/catalog/Contour.jsx";
+import Eyebrow from "@/pages/catalog/Eyebrow.jsx";
+import Eyelash from "@/pages/catalog/Eyelash.jsx";
+import Eyepalletes from "@/pages/catalog/Eyepalletes.jsx";
+import Eyeliner from "@/pages/catalog/Eyeliner.jsx";
+import Faceprimer from "@/pages/catalog/Faceprimer.jsx";
+import Gossipevents from "@/pages/catalog/Gossipevents.jsx";
+import Gossipmemories from "@/pages/catalog/Gossipmemories.jsx";
+import Highlighter from "@/pages/catalog/Highlighter.jsx";
+import Lipbalm from "@/pages/catalog/Lipbalm.jsx";
+import Lipgloss from "@/pages/catalog/Lipgloss.jsx";
+import Lipliner from "@/pages/catalog/Lipliner.jsx";
+import Lipoil from "@/pages/catalog/Lipoil.jsx";
+import Lipplumper from "@/pages/catalog/Lipplumper.jsx";
+import Lipstick from "@/pages/catalog/Lipstick.jsx";
+import Mascara from "@/pages/catalog/Mascara.jsx";
+import SettingSpray from "@/pages/catalog/Settingspray.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
