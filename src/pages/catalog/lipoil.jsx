@@ -6,7 +6,7 @@ import i3 from "../../assets/lipoil/lipoil3.webp";
 import i4 from "../../assets/lipoil/lipoil4.webp";
 import i5 from "../../assets/lipoil/lipoil4.webp";
 
-function lipoil() {
+function Lipoil() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function lipoil() {
   );
 }
 
-export default lipoil;
+export default Lipoil;

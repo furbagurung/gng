@@ -6,7 +6,7 @@ import i3 from "../../assets/lipstick/lipstick3.webp";
 import i4 from "../../assets/lipstick/lipstick4.webp";
 import i5 from "../../assets/lipstick/lipstick5.webp";
 
-function lipstick() {
+function Lipstick() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function lipstick() {
   );
 }
 
-export default lipstick;
+export default Lipstick;

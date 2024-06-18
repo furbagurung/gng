@@ -6,7 +6,7 @@ import i3 from "../../assets/faceprimer/faceprimer3.webp";
 import i4 from "../../assets/faceprimer/faceprimer4.webp";
 import i5 from "../../assets/faceprimer/faceprimer5.webp";
 
-function faceprimer() {
+function Faceprimer() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function faceprimer() {
   );
 }
 
-export default faceprimer;
+export default Faceprimer;

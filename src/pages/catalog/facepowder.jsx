@@ -6,7 +6,7 @@ import i3 from "../../assets/facepowder/facepowder3.webp";
 import i4 from "../../assets/facepowder/facepowder4.webp";
 import i5 from "../../assets/facepowder/facepowder5.webp";
 
-function facepowder() {
+function Facepowder() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function facepowder() {
   );
 }
 
-export default facepowder;
+export default Facepowder;

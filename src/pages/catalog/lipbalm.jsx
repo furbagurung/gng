@@ -6,7 +6,7 @@ import i3 from "../../assets/lipbalm/lipbalm3.webp";
 import i4 from "../../assets/lipbalm/lipbalm4.webp";
 import i5 from "../../assets/lipbalm/lipbalm5.webp";
 
-function lipbalm() {
+function Lipbalm() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function lipbalm() {
   );
 }
 
-export default lipbalm;
+export default Lipbalm;

@@ -6,7 +6,7 @@ import i3 from "../../assets/mascara/mascara7.webp";
 import i4 from "../../assets/mascara/mascara4.webp";
 import i5 from "../../assets/mascara/mascara5.webp";
 
-function mascara() {
+function Mascara() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function mascara() {
   );
 }
 
-export default mascara;
+export default Mascara;

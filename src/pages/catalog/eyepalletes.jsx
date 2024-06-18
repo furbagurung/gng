@@ -6,7 +6,7 @@ import i3 from "../../assets/eyepalette/eyepalette3.webp";
 import i4 from "../../assets/eyepalette/eyepalette4.webp";
 import i5 from "../../assets/eyepalette/eyepalette5.webp";
 
-function eyepalettes() {
+function Eyepalettes() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function eyepalettes() {
   );
 }
 
-export default eyepalettes;
+export default Eyepalettes;

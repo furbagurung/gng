@@ -6,7 +6,7 @@ import i3 from "../../assets/lipgloss/lipgloss3.webp";
 import i4 from "../../assets/lipgloss/lipgloss4.webp";
 import i5 from "../../assets/lipgloss/lipgloss5.webp";
 
-function lipgloss() {
+function Lipgloss() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function lipgloss() {
   );
 }
 
-export default lipgloss;
+export default Lipgloss;

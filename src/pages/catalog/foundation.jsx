@@ -6,7 +6,7 @@ import i3 from "../../assets/foundation/foundation3.webp";
 import i4 from "../../assets/foundation/foundation4.webp";
 import i5 from "../../assets/foundation/foundation5.webp";
 
-function foundation() {
+function Foundation() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function foundation() {
   );
 }
 
-export default foundation;
+export default Foundation;

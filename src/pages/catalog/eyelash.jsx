@@ -6,7 +6,7 @@ import i3 from "../../assets/eyelash/eyelash3.webp";
 import i4 from "../../assets/eyelash/eyelash4.webp";
 import i5 from "../../assets/eyelash/eyelash5.webp";
 
-function eyelash() {
+function Eyelash() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function eyelash() {
   );
 }
 
-export default eyelash;
+export default Eyelash;

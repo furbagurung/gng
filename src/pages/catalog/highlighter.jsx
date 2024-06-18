@@ -6,7 +6,7 @@ import i3 from "../../assets/highlighter/highlighter3.webp";
 import i4 from "../../assets/highlighter/highlighter4.webp";
 import i5 from "../../assets/highlighter/highlighter5.webp";
 
-function highlighter() {
+function Highlighter() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function highlighter() {
   );
 }
 
-export default highlighter;
+export default Highlighter;
