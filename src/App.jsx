@@ -17,7 +17,34 @@ import About from "./pages/About.jsx";
 import Privacy from "./pages/Privacy.jsx";
 
 import Tnc from "@/pages/Tnc.jsx";
-import Cushionfoundation from "@/pages/catalog/cushionfoundation.jsx";
+// import {
+//   Cushionfoundation,
+//   Foundation,
+//   // Primer, // commented out since it's not being used
+//   Facepowder,
+//   Blusher,
+//   Bronzer,
+//   Colorcorrectingpalette,
+//   Concealer,
+//   Contour,
+//   Eyebrow,
+//   Eyelash,
+//   Eyepalletes,
+//   Eyeliner,
+//   Faceprimer,
+//   Gossipevents,
+//   Mascara,
+//   Gossipmemories,
+//   Highlighter,
+//   SettingSpray,
+//   Lipoil,
+//   Lipstick,
+//   Lipgloss,
+//   Lipliner,
+//   Lipbalm,
+//   Lipplumper,
+// } from "@/pages/catalog";
+import Cushionfoundation from "./pages/catalog/Cushionfoundation.jsx";
 import Foundation from "./pages/catalog/Foundation.jsx";
 // import Primer from "@/pages/catalog/Primer.jsx";
 import Facepowder from "@/pages/catalog/Facepowder.jsx";
