@@ -8,11 +8,9 @@ import {
   Route,
   createRoutesFromElements,
   RouterProvider,
-  useLocation,
 } from "react-router-dom";
 import Header from "./pages/Header";
-import Footer from "./pages/Footer";
-import Catalog from "./pages/Catalog";
+
 import Gallery from "./pages/Gallery";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
