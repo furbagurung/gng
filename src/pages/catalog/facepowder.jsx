@@ -1,12 +1,12 @@
 import CatalogLayout from "../../layouts/CatalogLayout";
 
-import i1 from "../../assets/powder/powder.webp";
-import i2 from "../../assets/powder/powder2.webp";
-import i3 from "../../assets/powder/powder3.webp";
-import i4 from "../../assets/powder/powder4.webp";
-import i5 from "../../assets/powder/powder5.webp";
+import i1 from "../../assets/facepowder/facepowder1.webp";
+import i2 from "../../assets/facepowder/facepowder2.webp";
+import i3 from "../../assets/facepowder/facepowder3.webp";
+import i4 from "../../assets/facepowder/facepowder4.webp";
+import i5 from "../../assets/facepowder/facepowder5.webp";
 
-function powder() {
+function facepowder() {
   const description = () => {
     return (
       <>
@@ -36,7 +36,7 @@ function powder() {
   return (
     <>
       <CatalogLayout
-        title="Powder"
+        title="face powder"
         description={description()}
         price={13}
         features={list}
@@ -46,4 +46,4 @@ function powder() {
   );
 }
 
-export default powder;
+export default facepowder;

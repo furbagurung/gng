@@ -42,7 +42,7 @@ const items = [
           },
           {
             key: "4",
-            label: <NavLink to="catalog/powder">Powder</NavLink>,
+            label: <NavLink to="catalog/facepowder">Powder</NavLink>,
           },
           {
             key: "5",

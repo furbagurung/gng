@@ -20,7 +20,7 @@ import Tnc from "./pages/Tnc";
 import CushionFoundation from "./pages/catalog/cushionfoundation";
 import Foundation from "./pages/catalog/foundation";
 import Primer from "./pages/catalog/primer";
-import Powder from "./pages/catalog/powder";
+import Facepowder from "./pages/catalog/facepowder";
 import Blusher from "./pages/catalog/blusher";
 import Bronzer from "./pages/catalog/bronzer";
 import Colorcorrectingpalette from "./pages/catalog/colorcorrectingpalette";
@@ -55,7 +55,7 @@ const router = createBrowserRouter(
           <Route path="cushionfoundation" element={<CushionFoundation />} />
           <Route path="foundation" element={<Foundation />} />
           <Route path="primer" element={<Primer />} />
-          <Route path="powder" element={<Powder />} />
+          <Route path="facepowder" element={<Facepowder />} />
           <Route path="faceprimer" element={<Faceprimer />} />
           <Route path="settingspray" element={<SettingSpray />} />
           <Route
