@@ -17,7 +17,7 @@ import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 
 import Tnc from "./pages/Tnc";
-import Cushionfoundation from "./pages/catalog/Cushionfoundation";
+import Cushionfoundation from "@/pages/catalog/cushionfoundation";
 import Foundation from "./pages/catalog/Foundation";
 import Primer from "./pages/catalog/Primer";
 import Facepowder from "./pages/catalog/Facepowder";
