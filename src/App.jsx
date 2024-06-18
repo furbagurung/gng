@@ -18,7 +18,7 @@ import Privacy from "./pages/Privacy.jsx";
 
 import Tnc from "@/pages/Tnc.jsx";
 import Cushionfoundation from "@/pages/catalog/cushionfoundation.jsx";
-import Foundation from "@/pages/catalog/Foundation.jsx";
+import Foundation from "./pages/catalog/Foundation.jsx";
 // import Primer from "@/pages/catalog/Primer.jsx";
 import Facepowder from "@/pages/catalog/Facepowder.jsx";
 import Blusher from "@/pages/catalog/Blusher.jsx";
