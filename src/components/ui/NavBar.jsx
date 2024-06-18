@@ -26,39 +26,47 @@ const items = [
         children: [
           {
             key: "1",
-            label: "Cushion - Foundation",
+            label: (
+              <NavLink to="catalog/cushionfoundation">
+                Cushion - Foundation
+              </NavLink>
+            ),
           },
           {
             key: "2",
-            label: "Foundation ",
+            label: <NavLink to="catalog/cushionfoundation">Foundation</NavLink>,
           },
           {
             key: "3",
-            label: "primer ",
+            label: <NavLink to="catalog/primer">Primer</NavLink>,
           },
           {
             key: "4",
-            label: "Powder ",
+            label: <NavLink to="catalog/powder">Powder</NavLink>,
           },
           {
             key: "5",
-            label: "Face Primer ",
+            label: <NavLink to="catalog/facepimer">Face Primer</NavLink>,
           },
           {
             key: "6",
-            label: "Setting Spray ",
+            label: <NavLink to="catalog/settingspray">Setting Spray</NavLink>,
           },
           {
             key: "7",
-            label: "Collor Correcting Palette ",
+            label: (
+              <NavLink to="catalog/colorcorrectingpalette">
+                Color Correcting Palette
+              </NavLink>
+            ),
           },
           {
             key: "8",
-            label: "Contour ",
+            label: <NavLink to="catalog/contour">Contour</NavLink>,
           },
           {
             key: "9",
-            label: "Concealer ",
+            label: <NavLink to="catalog/concealer">Concealer</NavLink>,
           },
         ],
       },
@@ -69,15 +77,15 @@ const items = [
         children: [
           {
             key: "10",
-            label: "Blusher",
+            label: <NavLink to="catalog/blusher">Blusher</NavLink>,
           },
           {
             key: "11",
-            label: "Bronzer",
+            label: <NavLink to="catalog/bronzer">Bronzer</NavLink>,
           },
           {
             key: "12",
-            label: "Highlighter ",
+            label: <NavLink to="catalog/highlighter">Highlighter</NavLink>,
           },
         ],
       },
@@ -87,23 +95,23 @@ const items = [
         children: [
           {
             key: "13",
-            label: "Eye Palettes",
+            label: <NavLink to="catalog/eyepalettes">Eyepalettes</NavLink>,
           },
           {
             key: "14",
-            label: "Mascara",
+            label: <NavLink to="catalog/mascara">Mascara</NavLink>,
           },
           {
             key: "15",
-            label: "Eyeliner",
+            label: <NavLink to="catalog/eyeliner">Eyeliner</NavLink>,
           },
           {
             key: "16",
-            label: "Eyebrow",
+            label: <NavLink to="catalog/eyebrow">Eyebrow</NavLink>,
           },
           {
             key: "17",
-            label: "Eyelash",
+            label: <NavLink to="catalog/eyelash">Eyelash</NavLink>,
           },
         ],
       },
@@ -113,27 +121,27 @@ const items = [
         children: [
           {
             key: "14",
-            label: "Lip Oil",
+            label: <NavLink to="catalog/lipoil">Lip Oil</NavLink>,
           },
           {
             key: "15",
-            label: "Lip Balm",
+            label: <NavLink to="catalog/lipbalm">Lip balm</NavLink>,
           },
           {
             key: "16",
-            label: "Lip Sticks",
+            label: <NavLink to="catalog/lipsticks">Lip Sticks</NavLink>,
           },
           {
             key: "17",
-            label: "Lip Gloss",
+            label: <NavLink to="catalog/lipgloss">Lip Gloss</NavLink>,
           },
           {
             key: "18",
-            label: "Lip Liner",
+            label: <NavLink to="catalog/lipliner">Lip Liner</NavLink>,
           },
           {
             key: "19",
-            label: "Lip Plumper",
+            label: <NavLink to="catalog/lipplumper">Lip Plumper</NavLink>,
           },
         ],
       },

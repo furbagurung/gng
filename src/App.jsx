@@ -42,7 +42,7 @@ import Lipoil from "./pages/catalog/lipoil";
 import Lipplumper from "./pages/catalog/lipplumper";
 import Lipstick from "./pages/catalog/lipstick";
 import Mascara from "./pages/catalog/mascara";
-import Powder from "./pages/catalog/Powder";
+import Powder from "./pages/catalog/powder";
 import SettingSpray from "./pages/catalog/settingspray";
 
 const router = createBrowserRouter(

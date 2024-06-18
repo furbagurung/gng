@@ -1,26 +1,13 @@
 import { Button } from "@/components/ui/button";
 import CategoryCard from "@/components/ui/CategoryCard";
 import { FAQ } from "@/pages/FAQ";
-import { Section } from "lucide-react";
+
 import PropTypes from "prop-types";
-const CatalogLayout = ({
-  title,
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  price,
-  description,
-  features,
-}) => {
+const CatalogLayout = ({ title, img, price, description, features }) => {
   CatalogLayout.propTypes = {
     title: PropTypes.string.isRequired,
-    img1: PropTypes.string,
-    img2: PropTypes.string,
-    img3: PropTypes.string,
-    img4: PropTypes.string,
-    img5: PropTypes.string,
+    img: PropTypes.array,
+    price: PropTypes.number,
     description: PropTypes.string,
     features: PropTypes.object,
   };
@@ -30,7 +17,7 @@ const CatalogLayout = ({
         <div className=" py-8 grid justify-center sm:gap-10">
           <div className="sm:py-8 grid sm:w-full max-w-[1440px] w-[316px] justify-center">
             <div className="py-2 text-4xl poppins-extrabold  text-left sm:text-center">
-              <h1>{title}</h1>
+              <h1 className="uppercase">{title}</h1>
             </div>
             <div className=" sm:text-center flex justify-center w-[320px] sm:w-full">
               <p>
@@ -47,25 +34,26 @@ const CatalogLayout = ({
             <div className=" w-[316px] lg:w-[400px] xl:w[688px] shrink-0 justify-center items-center flex">
               <img
                 className="grow shrink basis-0 self-stretch"
-                src="https://via.placeholder.com/648x624"
+                src={img[0]}
+                alt={title}
               />
             </div>
             {/* sub images */}
             <div className="p-0 sm:p-4 flex-col w-fit justify-center items-start gap-4 grid sm:flex">
               <div className=" h-fit max-h-[304px] justify-start items-start gap-4 flex">
                 <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
-                  <img src="https://via.placeholder.com/316x304" />
+                  <img src={img[1]} alt={title} />
                 </div>
                 <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
-                  <img src="https://via.placeholder.com/316x304" />
+                  <img src={img[2]} alt={title} />
                 </div>
               </div>
               <div className=" h-fit max-h-[304px] justify-start items-start gap-4 flex">
                 <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
-                  <img src="https://via.placeholder.com/316x304" />
+                  <img src={img[3]} alt={title} />
                 </div>
                 <div className="w-[148px] lg:w-[195px] h-fit max-h-[304px] ">
-                  <img src="https://via.placeholder.com/316x304" />
+                  <img src={img[4]} alt={title} />
                 </div>
               </div>
             </div>
@@ -106,7 +94,11 @@ const CatalogLayout = ({
                 <h2 className="text-xl font-semibold">
                   Features of Gossip & Giggles {title}:
                 </h2>
-                <ul className="pl-4 p-2 list-disc">{features}</ul>
+                <ul className="pl-4 p-2 list-disc">
+                  {features.map((list, index) => (
+                    <li key={index}>{list}</li>
+                  ))}
+                </ul>
               </div>
             </div>
             <div className="flex-col justify-start items-start gap-6 flex">
@@ -124,10 +116,7 @@ const CatalogLayout = ({
         <section className="flex flex-col justify-center items-center gap-4 bg-black  sm:w-full p-4 py-16">
           <div className="sm:w-full max-w-[900px]  gap-9 flex-wrap md:flex-nowrap justify-center items-center flex ">
             <div className="">
-              <img
-                className="object-cover"
-                src="https://via.placeholder.com/616x640"
-              />
+              <img className="object-cover" src={img[0]} alt={title} />
             </div>
 
             <div className="p-4 flex-col text-white w-full justify-start items-start flex">
