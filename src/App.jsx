@@ -42,7 +42,7 @@ import Lipplumper from "@/pages/catalog/Lipplumper";
 import Lipstick from "@/pages/catalog/Lipstick";
 import Mascara from "@/pages/catalog/Mascara";
 
-import SettingSpray from "./pages/catalog/Settingspray";
+import SettingSpray from "@/pages/catalog/Settingspray";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
