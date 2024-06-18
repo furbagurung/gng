@@ -6,7 +6,7 @@ import i3 from "../../assets/powder/powder3.webp";
 import i4 from "../../assets/powder/powder4.webp";
 import i5 from "../../assets/powder/powder5.webp";
 
-function Powder() {
+function powder() {
   const description = () => {
     return (
       <>
@@ -36,7 +36,7 @@ function Powder() {
   return (
     <>
       <CatalogLayout
-        title="powder"
+        title="Powder"
         description={description()}
         price={13}
         features={list}
@@ -46,4 +46,4 @@ function Powder() {
   );
 }
 
-export default Powder;
+export default powder;

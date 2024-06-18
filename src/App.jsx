@@ -20,6 +20,7 @@ import Tnc from "./pages/Tnc";
 import CushionFoundation from "./pages/catalog/cushionfoundation";
 import Foundation from "./pages/catalog/foundation";
 import Primer from "./pages/catalog/primer";
+import Powder from "./pages/catalog/powder";
 import Blusher from "./pages/catalog/blusher";
 import Bronzer from "./pages/catalog/bronzer";
 import Colorcorrectingpalette from "./pages/catalog/colorcorrectingpalette";
@@ -40,7 +41,7 @@ import Lipoil from "./pages/catalog/lipoil";
 import Lipplumper from "./pages/catalog/lipplumper";
 import Lipstick from "./pages/catalog/lipstick";
 import Mascara from "./pages/catalog/mascara";
-import Powder from "./pages/catalog/powder";
+
 import SettingSpray from "./pages/catalog/settingspray";
 
 const router = createBrowserRouter(
