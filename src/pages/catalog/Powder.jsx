@@ -6,7 +6,7 @@ import i3 from "../../assets/powder/powder3.webp";
 import i4 from "../../assets/powder/powder4.webp";
 import i5 from "../../assets/powder/powder5.webp";
 
-function powder() {
+function Powder() {
   const description = () => {
     return (
       <>
@@ -46,4 +46,4 @@ function powder() {
   );
 }
 
-export default powder;
+export default Powder;
