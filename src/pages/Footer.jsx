@@ -2,7 +2,6 @@ import "../App.css";
 import logo from "../assets/logo.svg";
 
 import { NavLink } from "react-router-dom";
-import { Outlet } from "react-router-dom";
 function footer() {
   return (
     <>

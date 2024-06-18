@@ -46,7 +46,7 @@ import Tnc from "@/pages/Tnc.jsx";
 // } from "@/pages/catalog";
 import Cushionfoundation from "./pages/Cushionfoundation.jsx";
 import Foundation from "./pages/Foundation.jsx";
-// import Primer from "@/pages/Primer.jsx";
+import Primer from "@/pages/Primer.jsx";
 import Facepowder from "@/pages/Facepowder.jsx";
 import Blusher from "@/pages/Blusher.jsx";
 import Bronzer from "@/pages/Bronzer.jsx";
@@ -80,7 +80,7 @@ const router = createBrowserRouter(
 
         <Route path="cushionfoundation" element={<Cushionfoundation />} />
         <Route path="foundation" element={<Foundation />} />
-        {/* <Route path="primer" element={<Primer />} /> */}
+        <Route path="primer" element={<Primer />} />
         <Route path="facepowder" element={<Facepowder />} />
         <Route path="faceprimer" element={<Faceprimer />} />
         <Route path="settingspray" element={<SettingSpray />} />
