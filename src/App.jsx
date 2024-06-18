@@ -17,7 +17,7 @@ import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 
 import Tnc from "./pages/Tnc";
-import CushionFoundation from "./pages/catalog/Cushionfoundation";
+import Cushionfoundation from "./pages/catalog/Cushionfoundation";
 import Foundation from "./pages/catalog/Foundation";
 import Primer from "./pages/catalog/Primer";
 import Facepowder from "./pages/catalog/Facepowder";
@@ -52,7 +52,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="contact" element={<Contact />} />
         <Route path="catalog">
-          <Route path="cushionfoundation" element={<CushionFoundation />} />
+          <Route path="cushionfoundation" element={<Cushionfoundation />} />
           <Route path="foundation" element={<Foundation />} />
           <Route path="primer" element={<Primer />} />
           <Route path="facepowder" element={<Facepowder />} />
