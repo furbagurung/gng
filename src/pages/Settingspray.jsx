@@ -1,12 +1,12 @@
-import CatalogLayout from "../../layouts/CatalogLayout";
+import CatalogLayout from "../layouts/CatalogLayout";
 
-import i1 from "../../assets/lipoil/lipoil.webp";
-import i2 from "../../assets/lipoil/lipoil2.webp";
-import i3 from "../../assets/lipoil/lipoil3.webp";
-import i4 from "../../assets/lipoil/lipoil4.webp";
-import i5 from "../../assets/lipoil/lipoil4.webp";
+import i1 from "../assets/settingspray/settingspray3.jpg";
+import i2 from "../assets/settingspray/settingspray2.jpg";
+import i3 from "../assets/settingspray/settingspray2.jpg";
+import i4 from "../assets/settingspray/settingspray4.jpg";
+import i5 from "../assets/settingspray/settingspray5.jpg";
 
-function Lipoil() {
+function Settingspray() {
   const description = () => {
     return (
       <>
@@ -36,7 +36,7 @@ function Lipoil() {
   return (
     <>
       <CatalogLayout
-        title="lip oil"
+        title="settingspray"
         description={description()}
         price={13}
         features={list}
@@ -46,4 +46,4 @@ function Lipoil() {
   );
 }
 
-export default Lipoil;
+export default Settingspray;

@@ -27,46 +27,44 @@ const items = [
           {
             key: "1",
             label: (
-              <NavLink to="catalog/cushionfoundation">
-                Cushion - Foundation
-              </NavLink>
+              <NavLink to="cushionfoundation">Cushion - Foundation</NavLink>
             ),
           },
           {
             key: "2",
-            label: <NavLink to="catalog/cushionfoundation">Foundation</NavLink>,
+            label: <NavLink to="cushionfoundation">Foundation</NavLink>,
           },
           {
             key: "3",
-            label: <NavLink to="catalog/primer">Primer</NavLink>,
+            label: <NavLink to="primer">Primer</NavLink>,
           },
           {
             key: "4",
-            label: <NavLink to="catalog/facepowder">Powder</NavLink>,
+            label: <NavLink to="facepowder">Powder</NavLink>,
           },
           {
             key: "5",
-            label: <NavLink to="catalog/facepimer">Face Primer</NavLink>,
+            label: <NavLink to="facepimer">Face Primer</NavLink>,
           },
           {
             key: "6",
-            label: <NavLink to="catalog/settingspray">Setting Spray</NavLink>,
+            label: <NavLink to="settingspray">Setting Spray</NavLink>,
           },
           {
             key: "7",
             label: (
-              <NavLink to="catalog/colorcorrectingpalette">
+              <NavLink to="colorcorrectingpalette">
                 Color Correcting Palette
               </NavLink>
             ),
           },
           {
             key: "8",
-            label: <NavLink to="catalog/contour">Contour</NavLink>,
+            label: <NavLink to="contour">Contour</NavLink>,
           },
           {
             key: "9",
-            label: <NavLink to="catalog/concealer">Concealer</NavLink>,
+            label: <NavLink to="concealer">Concealer</NavLink>,
           },
         ],
       },
@@ -77,15 +75,15 @@ const items = [
         children: [
           {
             key: "10",
-            label: <NavLink to="catalog/blusher">Blusher</NavLink>,
+            label: <NavLink to="blusher">Blusher</NavLink>,
           },
           {
             key: "11",
-            label: <NavLink to="catalog/bronzer">Bronzer</NavLink>,
+            label: <NavLink to="bronzer">Bronzer</NavLink>,
           },
           {
             key: "12",
-            label: <NavLink to="catalog/highlighter">Highlighter</NavLink>,
+            label: <NavLink to="highlighter">Highlighter</NavLink>,
           },
         ],
       },
@@ -95,23 +93,23 @@ const items = [
         children: [
           {
             key: "13",
-            label: <NavLink to="catalog/eyepalettes">Eyepalettes</NavLink>,
+            label: <NavLink to="eyepalettes">Eyepalettes</NavLink>,
           },
           {
             key: "14",
-            label: <NavLink to="catalog/mascara">Mascara</NavLink>,
+            label: <NavLink to="mascara">Mascara</NavLink>,
           },
           {
             key: "15",
-            label: <NavLink to="catalog/eyeliner">Eyeliner</NavLink>,
+            label: <NavLink to="eyeliner">Eyeliner</NavLink>,
           },
           {
             key: "16",
-            label: <NavLink to="catalog/eyebrow">Eyebrow</NavLink>,
+            label: <NavLink to="eyebrow">Eyebrow</NavLink>,
           },
           {
             key: "17",
-            label: <NavLink to="catalog/eyelash">Eyelash</NavLink>,
+            label: <NavLink to="eyelash">Eyelash</NavLink>,
           },
         ],
       },
@@ -121,27 +119,27 @@ const items = [
         children: [
           {
             key: "14",
-            label: <NavLink to="catalog/lipoil">Lip Oil</NavLink>,
+            label: <NavLink to="lipoil">Lip Oil</NavLink>,
           },
           {
             key: "15",
-            label: <NavLink to="catalog/lipbalm">Lip balm</NavLink>,
+            label: <NavLink to="lipbalm">Lip balm</NavLink>,
           },
           {
             key: "16",
-            label: <NavLink to="catalog/lipsticks">Lip Sticks</NavLink>,
+            label: <NavLink to="lipsticks">Lip Sticks</NavLink>,
           },
           {
             key: "17",
-            label: <NavLink to="catalog/lipgloss">Lip Gloss</NavLink>,
+            label: <NavLink to="lipgloss">Lip Gloss</NavLink>,
           },
           {
             key: "18",
-            label: <NavLink to="catalog/lipliner">Lip Liner</NavLink>,
+            label: <NavLink to="lipliner">Lip Liner</NavLink>,
           },
           {
             key: "19",
-            label: <NavLink to="catalog/lipplumper">Lip Plumper</NavLink>,
+            label: <NavLink to="lipplumper">Lip Plumper</NavLink>,
           },
         ],
       },

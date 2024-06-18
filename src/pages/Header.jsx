@@ -112,7 +112,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/cushionfoundation"
+                                    to="cushionfoundation"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -126,7 +126,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/foundation"
+                                    to="foundation"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -141,7 +141,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/primer"
+                                    to="primer"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -155,7 +155,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/facepowder"
+                                    to="facepowder"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -169,7 +169,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/faceprimer"
+                                    to="faceprimer"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -183,7 +183,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/settingspray"
+                                    to="settingspray"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -197,7 +197,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/colorcorrectingpalette"
+                                    to="colorcorrectingpalette"
                                     className="  break-after: auto;
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -211,7 +211,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/contour"
+                                    to="contour"
                                     className="  break-after: auto;
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -225,7 +225,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/concealer"
+                                    to="concealer"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -254,7 +254,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/blusher"
+                                    to="blusher"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -268,7 +268,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/bronzer"
+                                    to="bronzer"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -282,7 +282,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/highlighter"
+                                    to="highlighter"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -307,7 +307,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipoil"
+                                    to="lipoil"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -321,7 +321,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipbalm"
+                                    to="lipbalm"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -335,7 +335,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipstick"
+                                    to="lipstick"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -349,7 +349,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipgloss"
+                                    to="lipgloss"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -363,7 +363,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipliner"
+                                    to="lipliner"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -377,7 +377,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/lipplumper"
+                                    to="lipplumper"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -406,7 +406,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/eyepalletes"
+                                    to="eyepalletes"
                                     className=" 
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -420,7 +420,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/mascara"
+                                    to="mascara"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -434,7 +434,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/eyeliner"
+                                    to="eyeliner"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -448,7 +448,7 @@ function Header() {
                                 </li>
                                 <li>
                                   <NavLink
-                                    to="catalog/eyebrow"
+                                    to="eyebrow"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -462,7 +462,7 @@ function Header() {
                                 </li>{" "}
                                 <li>
                                   <NavLink
-                                    to="catalog/eyelash"
+                                    to="eyelash"
                                     className="  
                                 hover:bg-gradient-to-br
                                 hover:from-indigo-50
@@ -486,7 +486,7 @@ function Header() {
                   </li>
                   <li className="relative  group px-2 py-[11px]">
                     <NavLink
-                      to="catalog/gallery"
+                      to="gallery"
                       className="hover:opacity-50 transition ease-in-out "
                     >
                       Gossip Gallery
@@ -522,7 +522,7 @@ function Header() {
                           <ul className="mt-3 text-[13px]">
                             <li>
                               <NavLink
-                                to="catalog/gossipevents"
+                                to="gossipevents"
                                 className="
                             block p-2 -mx-2  rounded-lg 
                             text-gray-600
@@ -549,7 +549,7 @@ function Header() {
                             </li>
                             <li>
                               <NavLink
-                                to="catalog/gossipmemories"
+                                to="gossipmemories"
                                 className="
                             block p-2 -mx-2  rounded-lg 
                             text-gray-600
