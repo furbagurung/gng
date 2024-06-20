@@ -10,8 +10,8 @@ import {
 } from "@heroicons/react/24/outline";
 
 import NavBar from "../components/ui/NavBar";
-import { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { useEffect,useState } from "react";
+import { useLocation, NavLink, Outlet } from "react-router-dom";
 
 import Footer from "../pages/Footer";
 // import SearchBar from "@/components/ui/SearchBar";
@@ -20,6 +20,11 @@ import MarqueeElement from "./MarqueeElement";
 
 function Header() {
   const [show, setShow] = useState(false); //for mobilemenu
+  const location = useLocation();
+
+  useEffect(()=>{
+    setShow(false);
+  }, [location]);
 
   return (
     <>
