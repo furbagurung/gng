@@ -69,6 +69,7 @@ import Lipplumper from "@/pages/Lipplumper.jsx";
 import Lipstick from "@/pages/Lipstick.jsx";
 import Mascara from "@/pages/Mascara.jsx";
 import SettingSpray from "@/pages/Settingspray.jsx";
+// import RouteLayout from "./layouts/RouteLayout.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

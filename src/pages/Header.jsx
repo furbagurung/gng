@@ -10,21 +10,28 @@ import {
 } from "@heroicons/react/24/outline";
 
 import NavBar from "../components/ui/NavBar";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, NavLink, Outlet } from "react-router-dom";
 
-import Footer from "../pages/Footer";
+import Footer from "./Footer";
 // import SearchBar from "@/components/ui/SearchBar";
 import Marquee from "react-fast-marquee";
 import MarqueeElement from "./MarqueeElement";
 
-function Header() {
-  const [show, setShow] = useState(false); //for mobilemenu
+function MobileHeader() {
+  // State to manage mobile menu visibility
+  const [isMobileMenuVisible, setMobileMenuVisible] = useState(false); //for mobilemenu
+  // State to manage desktop menu hover status
+  const [isDesktopMenuHovered, setIsDesktopMenuHovered] = useState(false); // for desktop menu hover
+  // Hook to get current location
   const location = useLocation();
-
-  useEffect(()=>{
-    setShow(false);
+  // Effect to reset mobile menu visibility on route change
+  useEffect(() => {
+    setMobileMenuVisible(false);
+    setIsDesktopMenuHovered(false);
   }, [location]);
+
+  // Effect to reset desktop menu hover state on route chang
 
   return (
     <>
@@ -57,7 +64,7 @@ function Header() {
                   type="button"
                   className=" items-center justify-center rounded-md text-white"
                   onClick={() => {
-                    setShow(false);
+                    // setMobileMenuVisible(false);
                   }}
                 >
                   <span className="sr-only">Open main menu</span>
@@ -74,19 +81,31 @@ function Header() {
                       Home
                     </NavLink>
                   </li>
-                  <li className="relative group px-2 py-[20px]">
+                  <li
+                    onMouseEnter={() => setIsDesktopMenuHovered(true)}
+                    onMouseLeave={() => setIsDesktopMenuHovered(false)}
+                    className="relative group px-2 py-[20px]"
+                  >
                     Catalog
                     {/* drop down Start*/}
+                    {/* {${isHovered ? -translate-y-6 opacity-0 : null} } */}
                     <div
-                      className="
-                    absolute top-[70px] -left-48  
-                    transform group-hover:transform transition 
-              md:-translate-x-40 
-                    group-hover:-translate-y-6 opacity-0 
-                    group-hover:opacity-100 invisible  
-                    group-hover:visible 
-                    min-w-[730px] 
-                    ml-10 z-50 ease-out duration-500"
+                      className={`absolute top-[70px] -left-48  
+                     md:-translate-x-40 ease-out duration-500 min-w-[730px]  ml-10 z-50
+                  ${
+                    isDesktopMenuHovered
+                      ? ` 
+                      transform transition
+                      group-hover:transform group-hover:-translate-y-6
+                          group-hover:opacity-100 "  
+                          group-hover:visible 
+                    `
+                      : null
+                  }
+                    invisible          
+                  opacity-0 
+                    
+                       `}
                     >
                       <div
                         className="
@@ -600,7 +619,7 @@ function Header() {
                       type="button"
                       className=" items-center justify-center rounded-md text-white"
                       onClick={() => {
-                        setShow(false);
+                        setMobileMenuVisible(false);
                       }}
                     >
                       <span className="sr-only">Open main menu</span>
@@ -628,7 +647,7 @@ function Header() {
                       type="button"
                       className=" items-center justify-center rounded-md text-white"
                       onClick={() => {
-                        setShow(false);
+                        setMobileMenuVisible(false);
                       }}
                     >
                       <span className="sr-only">Open main menu</span>
@@ -640,12 +659,12 @@ function Header() {
             </div>
             {/* Mobile Navbar */}
             <div className="flex lg:hidden justify-center h-full items-center">
-              {show ? (
+              {isMobileMenuVisible ? (
                 <button
                   type="button"
                   className=" items-center justify-center rounded-md text-white"
                   onClick={() => {
-                    setShow(false);
+                    setMobileMenuVisible(false);
                   }}
                 >
                   <span className="sr-only">Open main menu</span>
@@ -656,7 +675,7 @@ function Header() {
                   type="button"
                   className=" items-center justify-center rounded-md text-white"
                   onClick={() => {
-                    setShow(!show);
+                    setMobileMenuVisible(!isMobileMenuVisible);
                   }}
                 >
                   <span className="sr-only">Open main menu</span>
@@ -666,7 +685,7 @@ function Header() {
             </div>
           </div>
           {/* condition for showing mobile Navbar */}
-          <div>{show ? <NavBar /> : null}</div>
+          <div>{isMobileMenuVisible ? <NavBar /> : null}</div>
         </header>
         <main className="flex justify-center flex-col">
           <Outlet />
@@ -677,4 +696,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default MobileHeader;

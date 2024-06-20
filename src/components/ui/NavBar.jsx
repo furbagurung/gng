@@ -118,27 +118,27 @@ const items = [
         label: "Lip",
         children: [
           {
-            key: "14",
+            key: "18",
             label: <NavLink to="lipoil">Lip Oil</NavLink>,
           },
           {
-            key: "15",
+            key: "19",
             label: <NavLink to="lipbalm">Lip balm</NavLink>,
           },
           {
-            key: "16",
+            key: "20",
             label: <NavLink to="lipsticks">Lip Sticks</NavLink>,
           },
           {
-            key: "17",
+            key: "21",
             label: <NavLink to="lipgloss">Lip Gloss</NavLink>,
           },
           {
-            key: "18",
+            key: "22",
             label: <NavLink to="lipliner">Lip Liner</NavLink>,
           },
           {
-            key: "19",
+            key: "23",
             label: <NavLink to="lipplumper">Lip Plumper</NavLink>,
           },
         ],
@@ -151,11 +151,11 @@ const items = [
     icon: <PhotoIcon className="h-4 w-4" />,
     children: [
       {
-        key: "20",
+        key: "24",
         label: "Gossip Events",
       },
       {
-        key: "6",
+        key: "25",
         label: "Gossip Memories",
       },
     ],
