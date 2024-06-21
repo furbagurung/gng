@@ -4,6 +4,7 @@ import { FAQ } from "./FAQ";
 
 import "../App.css";
 import hero from "../assets/Hero.jpg";
+import hero2 from "../assets/hero2.jpg";
 import cushion from "../assets/Cushion.png";
 
 import sulfate from "../assets/sulfate-free.jpg";
@@ -34,7 +35,7 @@ const Home = () => {
         <div className="w-full h-fit flex justify-center">
           <img
             src={hero}
-            className=" w-full max-w-[1470px] h-[250px] md:h-[500px] object-cover"
+            className=" w-full max-w-[1600px] h-[250px] md:h-[500px] object-cover"
           ></img>
         </div>
 

@@ -697,7 +697,7 @@ function MobileHeader() {
           <motion.div
             animate={isMobileMenuVisible ? "open" : "closed"}
             variants={variants}
-            transition={{ ease: "linear", duration: 0.5 }}
+            transition={{ ease: "easeOut", duration: 0.3 }}
             className="-z-5"
           >
             {isMobileMenuVisible ? <NavBar /> : null}
@@ -707,7 +707,7 @@ function MobileHeader() {
         <motion.main
           animate={isMobileMenuVisible ? "open" : "closed"}
           variants={mainVariants}
-          transition={{ ease: "linear", duration: 0.5 }}
+          transition={{ ease: "easeOut", duration: 0.2 }}
           className={`outlet flex justify-center flex-col ${
             isMobileMenuVisible ? `navbar-open` : null
           }`}
