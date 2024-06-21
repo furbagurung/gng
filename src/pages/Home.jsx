@@ -22,98 +22,209 @@ import { Button } from "../components/ui/button";
 
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import ProductCard from "@/components/ui/ProductCard";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <section className="h-[400px] min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
-        <div className="w-full  h-fit flex justify-center">
+      {" "}
+      {/* swiperslider */}
+      <section className="h-[400px]  min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
+        <div className="w-full h-fit flex justify-center">
           <img src={hero} className="h-[250px] md:h-[500px] object-cover"></img>
         </div>
 
         <div className="min-w-[300px] max-w-[80%] grid  justify-center items-center gap-1 absolute bottom-8">
-          <h1 className=" font-bold sm:text-4xl text-3xl leading-tight poppins-bold text-center tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9 }}
+            className=" font-bold sm:text-4xl text-3xl leading-tight poppins-bold text-center tracking-tight"
+          >
             Discover the secrets of Beauty
-          </h1>
-          <p className="  text-center text-[14px] font-normal poppins-regular">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9 }}
+            className="  text-center text-[14px] font-normal poppins-regular"
+          >
             Shop now the best BB cream cushion foundation
-          </p>
-          <div className="flex justify-center mt-4">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 250 }}
+            animate={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9 }}
+            className="flex justify-center mt-4"
+          >
             <Button variant="default" width="200px">
-              <a
-                href="#"
+              <NavLink
+                to="contact"
                 className="  text-[14px] font-medium py-2 px-4 rounded poppins-regular"
               >
                 Contact Us
-              </a>
+              </NavLink>
             </Button>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="min-w-[320px] lg:h-[375px] h-[650px] grid  w-full justify-center relative p-4">
         <div className=" lg:w-full grid justify-center gap-4 py-16 mb-6 ">
-          <h1 className="text-4xl  text-center lg:text-4xl leading-tight  poppins-bold  tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9 }}
+            className="text-4xl  text-center lg:text-4xl leading-tight  poppins-bold  tracking-tight"
+          >
             Shop our Collection
-          </h1>
-          <p className=" leading-tight flex  text-center text-[14px] font-medium poppins-regular">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.9 }}
+            className=" leading-tight flex  text-center text-[14px] font-medium poppins-regular"
+          >
             Shop now the best bb cream cushion foundation
-          </p>
+          </motion.p>
         </div>
-        <div className="lg:w-full w-fit lg:flex grid grid-cols-2 justify-center gap-0 p-2 ">
-          <CategoryCard title="Face" src={faceImg} />
-          <CategoryCard title="Cheeks" src={cheeksImg} />
-          <CategoryCard title="Eye" src={eyeImg} />
-          <CategoryCard title="Lips" src={faceImg} />
-        </div>
-      </section>
+        <motion.ul className="z-10 lg:w-full w-fit lg:flex grid grid-cols-2 justify-center gap-0 p-2 ">
+          <motion.li
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.9 }}
+          >
+            <CategoryCard title="Face" src={faceImg} />
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.9 }}
+          >
+            {" "}
+            <CategoryCard title="Cheeks" src={cheeksImg} />
+          </motion.li>
 
+          <motion.li
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.9 }}
+          >
+            {" "}
+            <CategoryCard title="Eye" src={eyeImg} />
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.9 }}
+          >
+            <CategoryCard title="Lips" src={faceImg} />
+          </motion.li>
+        </motion.ul>
+      </section>
       {/* why Gossip */}
-      <section className="lg:h-[500px] min-w-[320px] h-[500px] bg-black  flex flex-col relative  w-full items-center px-6">
+      <motion.section
+        initial={{ opacity: 0, y: 250 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.9 }}
+        className="lg:h-[500px] min-w-[320px] h-[500px] bg-black  flex flex-col relative  w-full items-center px-6"
+      >
         <div className="  w-full flex flex-col text-white justify-center items-center gap-1 pt-40 pb-10 lg:pt-[150px]">
-          <h1 className="w-full text-center font-bold text-3xl lg:text-4xl leading-tight poppins-bold tracking-tight">
+          <motion.h1
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.9 }}
+            className="w-full text-center font-bold text-3xl lg:text-4xl leading-tight poppins-bold tracking-tight"
+          >
             What makes us Gossips?
-          </h1>
-          <p className=" lg:w-[700px] min-w-[320px] p-4 text-center leading-tight flex justify-center text-[16px] font-normal poppins-regular">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.9 }}
+            className=" lg:w-[700px] min-w-[320px] p-4 text-center leading-tight flex justify-center text-[16px] font-normal poppins-regular"
+          >
             Together We &apos;re building a safe, welcoming space in beauty and
             beyond. This is makeup made to feel good in, without hiding what
             makes you unique. And it&apos;s all vegan and cruelty free.
-          </p>
-          <div className="flex w-full justify-center align-top">
-            <a
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15, duration: 0.8 }}
+            className="flex w-full justify-center align-top"
+          >
+            <NavLink
               href="#"
               className="flex items-center w-auto text-[14px] underline-offset-3 border-b-2 decoration-white font-medium  poppins-regular"
             >
               Our Story
-            </a>
+            </NavLink>
             <ChevronRightIcon className="h-4 w-4 text-white" />
-          </div>
+          </motion.div>
         </div>
-        <div className=" flex justify-center z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 250 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.9 }}
+          className=" flex justify-center z-10"
+        >
           <img
             src={cushion}
             className="object-cover md:h-[300px] min-w-24"
           ></img>
-        </div>
-      </section>
-
+        </motion.div>
+      </motion.section>
       {/* sustainable */}
       <section className="lg:h-[600px] h-[350px] sm:h-[450px] bg-white flex flex-col w-full relative md:pt-[50px] p-4 ">
         <div className="  w-full grid justify-center grid-rows-auto-rows-fr gap-4 pt-32">
-          <h1 className="font-bold text-3xl lg:text-4xl leading-tight text-center  poppins-bold  tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="font-bold text-3xl lg:text-4xl leading-tight text-center  poppins-bold  tracking-tight"
+          >
             Sustainable Beauty
-          </h1>
-          <p className=" leading-tight text-center text-[14px] font-medium poppins-regular">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className=" leading-tight text-center text-[14px] font-medium poppins-regular"
+          >
             We are committed to environmental sustainability
-          </p>
+          </motion.p>
         </div>
-        <div className="sm:w-full  mix-blend-multiply flex  object-cover justify-center overflow-clip py-10">
+        <motion.div
+          initial={{ opacity: 0, y: 250 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="sm:w-full  mix-blend-multiply flex  object-cover justify-center overflow-clip py-10"
+        >
           <img
             src={sulfate}
             className="object-cover transform scale-150 sm:scale-100"
           ></img>
-        </div>
+        </motion.div>
       </section>
-
       {/* <section
         className="w-full flex justify-center bg-slate-100
       "
@@ -214,55 +325,118 @@ const Home = () => {
       {/* Best Selling */}
       <section className=" h-fit flex flex-col relative  w-full items-center p-4">
         <div className="  w-full flex flex-col justify-center items-center gap-4 pt-[100px]">
-          <h1 className="w-full text-center font-bold text-3xl lg:text-4xl leading-tight poppins-bold  tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="w-full text-center font-bold text-3xl lg:text-4xl leading-tight poppins-bold  tracking-tight"
+          >
             Best Sellings
-          </h1>
-          <p className=" leading-tight text-center text-[14px] font-medium poppins-regular">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className=" leading-tight text-center text-[14px] font-medium poppins-regular"
+          >
             Shop now the best bb cream cushion foundation
-          </p>
+          </motion.p>
         </div>
         <div className="flex  justify-center w-full py-10">
           {" "}
-          <div className="lg:w-full w-fit lg:flex grid grid-cols-2 shrink-1 justify-center gap-6 p-2">
-            {" "}
-            <ProductCard
-              className="grid"
-              src={LiquidBlush}
-              title="Gossip and Giggles Liquid Blush"
-              price="$500"
-            />{" "}
-            <ProductCard
-              src={LipOil}
-              title="Gossip and Giggles Liquid Blush"
-              price="$200"
-            />{" "}
-            <ProductCard
-              src={Stick}
-              title="Gossip and Giggles Liquid Blush"
-              price="$100"
-            />{" "}
-            <ProductCard
-              src={Mist}
-              title="Gossip and Giggles Hair Fragrance Mist"
-              price="$300"
-            />
-          </div>
+          <ul className="lg:w-full w-fit lg:flex grid grid-cols-2 shrink-1 justify-center gap-6 p-2">
+            <motion.li
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              {" "}
+              <ProductCard
+                className="grid"
+                src={LiquidBlush}
+                title="Gossip and Giggles Liquid Blush"
+                price="$500"
+              />
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              {" "}
+              <ProductCard
+                src={LipOil}
+                title="Gossip and Giggles Liquid Blush"
+                price="$200"
+              />
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              {" "}
+              <ProductCard
+                src={Stick}
+                title="Gossip and Giggles Liquid Blush"
+                price="$100"
+              />
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            >
+              <ProductCard
+                src={Mist}
+                title="Gossip and Giggles Hair Fragrance Mist"
+                price="$300"
+              />
+            </motion.li>
+          </ul>
         </div>
       </section>
       {/* Certification */}
       <section className="h-auto flex flex-col bg-white w-full relative pt-[50px]">
         <div className="  w-full grid justify-center grid-rows-auto-rows-fr gap-4 lg:pt-[10px] ">
-          <h1 className="font-bold text-3xl lg:text-4xl text-center leading-tight  poppins-bold tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="font-bold text-3xl lg:text-4xl text-center leading-tight  poppins-bold tracking-tight"
+          >
             Certification
-          </h1>
-          <p className=" leading-tight flex justify-center text-[14px] font-medium poppins-regular">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className=" leading-tight flex justify-center text-[14px] font-medium poppins-regular"
+          >
             Certification of Quality System
-          </p>
+          </motion.p>
         </div>
-        <div className="flex justify-center py-4 ">
+        <motion.div
+          initial={{ opacity: 0, y: 250 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="flex justify-center py-4 "
+        >
           <img src={certificate} className="p-8 sm:w-[600px]"></img>
           {/* <CaraouselSlider /> */}
-        </div>
+        </motion.div>
       </section>
       {/* FAQ */}
       <section className="text-white bg-black flex flex-col w-full relative pb-11 p-4 ">
