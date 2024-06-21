@@ -195,7 +195,7 @@ const Home = () => {
         initial={{ opacity: 0, y: 250 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.2, duration: 0.5 }}
+        transition={{ delay: 0.01, duration: 0.5 }}
         className="lg:h-[600px] h-[350px] sm:h-[450px] bg-white flex flex-col w-full relative md:pt-[50px] p-4 "
       >
         <div className="  w-full grid justify-center grid-rows-auto-rows-fr gap-4 pt-32">
@@ -203,7 +203,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 250 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.02, duration: 0.5 }}
             className="font-bold text-3xl lg:text-4xl leading-tight text-center  poppins-bold  tracking-tight"
           >
             Sustainable Beauty
@@ -212,7 +212,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 250 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.03, duration: 0.5 }}
             className=" leading-tight text-center text-[14px] font-medium poppins-regular"
           >
             We are committed to environmental sustainability
@@ -222,7 +222,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 250 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ delay: 0.04, duration: 0.5 }}
           className="sm:w-full  mix-blend-multiply flex  object-cover justify-center overflow-clip py-10"
         >
           <img
