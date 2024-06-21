@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 function Gallery() {
   return (
     <>

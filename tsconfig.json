@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true,
+
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true
+  },
+  "include": ["li/**/*.ts", "li/**/*.js"],
+  "exclude": ["node_modules"]
+}
