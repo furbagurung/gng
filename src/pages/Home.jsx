@@ -191,7 +191,13 @@ const Home = () => {
         </motion.div>
       </motion.section>
       {/* sustainable */}
-      <section className="lg:h-[600px] h-[350px] sm:h-[450px] bg-white flex flex-col w-full relative md:pt-[50px] p-4 ">
+      <motion.section
+        initial={{ opacity: 0, y: 250 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="lg:h-[600px] h-[350px] sm:h-[450px] bg-white flex flex-col w-full relative md:pt-[50px] p-4 "
+      >
         <div className="  w-full grid justify-center grid-rows-auto-rows-fr gap-4 pt-32">
           <motion.h1
             initial={{ opacity: 0, y: 250 }}
@@ -224,7 +230,7 @@ const Home = () => {
             className="object-cover transform scale-150 sm:scale-100"
           ></img>
         </motion.div>
-      </section>
+      </motion.section>
       {/* <section
         className="w-full flex justify-center bg-slate-100
       "
