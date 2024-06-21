@@ -32,7 +32,10 @@ const Home = () => {
       {/* swiperslider */}
       <section className="h-[400px]  min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
         <div className="w-full h-fit flex justify-center">
-          <img src={hero} className="h-[250px] md:h-[500px] object-cover"></img>
+          <img
+            src={hero}
+            className=" w-full max-w-[1470px] h-[250px] md:h-[500px] object-cover"
+          ></img>
         </div>
 
         <div className="min-w-[300px] max-w-[80%] grid  justify-center items-center gap-1 absolute bottom-8">
@@ -72,7 +75,7 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
-      <section className="min-w-[320px] lg:h-[375px] h-[650px] grid  w-full justify-center relative p-4">
+      <section className="min-w-[320px] lg:h-[375px] h-[650px] grid bg-[#f8edeb;]  w-full justify-center relative p-4">
         <div className=" lg:w-full grid justify-center gap-4 py-16 mb-6 ">
           <motion.h1
             initial={{ opacity: 0, y: 250 }}
@@ -329,7 +332,7 @@ const Home = () => {
         </div>
       </section> */}
       {/* Best Selling */}
-      <section className=" h-fit flex flex-col relative  w-full items-center p-4">
+      <section className=" h-fit flex flex-col relative bg-[#f8edeb] w-full items-center p-4">
         <div className="  w-full flex flex-col justify-center items-center gap-4 pt-[100px]">
           <motion.h1
             initial={{ opacity: 0, y: 250 }}

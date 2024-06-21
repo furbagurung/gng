@@ -17,8 +17,17 @@ import Footer from "./Footer";
 // import SearchBar from "@/components/ui/SearchBar";
 import Marquee from "react-fast-marquee";
 import MarqueeElement from "./MarqueeElement";
-
+import { motion } from "framer-motion";
 function MobileHeader() {
+  // for mobile navbar animation
+  const variants = {
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: "-100%" },
+  };
+  const mainVariants = {
+    open: { opacity: 1, y: 100 },
+    closed: { opacity: 1, y: 0 },
+  };
   // State to manage mobile menu visibility
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false); //for mobilemenu
   // State to manage desktop menu hover status
@@ -32,13 +41,13 @@ function MobileHeader() {
   }, [location]);
 
   // Effect to reset desktop menu hover state on route chang
-
+  // bg-[#d2bab6]
   return (
     <>
       {/* <SearchBar /> */}
       <div className="w-full min-w-[320px]  z-50">
         <header className="flex flex-col justify-center items-center h-auto z-50">
-          <div className="h-9 flex items-center bg-[#d2bab6] w-full">
+          <div className="z-10 h-9 flex items-center bg-[#d2bab6] w-full">
             <Marquee
               pauseOnHover
               autoFill
@@ -50,13 +59,13 @@ function MobileHeader() {
               <MarqueeElement />
             </Marquee>
           </div>
-          <div className="bg-white w-full flex justify-center">
+          <div className="z-10 bg-white w-full flex justify-center">
             <NavLink to="/" className=" flex items-center h-10 w-20 my-4">
               <img src={logo} alt="Gossip and Giggles Logo" />
             </NavLink>
           </div>
 
-          <div className=" bg-black w-full h-14 flex items-center justify-center lg:px-[9rem] px-6">
+          <div className="z-10 bg-neutral-900 w-full h-14 flex items-center justify-center lg:px-[9rem] px-6">
             <div className="flex items-center justify-start gap-6 sm:justify-between px-5 max-w-[1280px] w-full">
               <nav className="w-fit ">
                 {" "}
@@ -685,12 +694,27 @@ function MobileHeader() {
             </div>
           </div>
           {/* condition for showing mobile Navbar */}
-          <div>{isMobileMenuVisible ? <NavBar /> : null}</div>
+          <motion.div
+            animate={isMobileMenuVisible ? "open" : "closed"}
+            variants={variants}
+            transition={{ ease: "linear", duration: 0.5 }}
+            className="-z-5"
+          >
+            {isMobileMenuVisible ? <NavBar /> : null}
+          </motion.div>
         </header>
-        <main className="flex justify-center flex-col">
+
+        <motion.main
+          animate={isMobileMenuVisible ? "open" : "closed"}
+          variants={mainVariants}
+          transition={{ ease: "linear", duration: 0.5 }}
+          className={`outlet flex justify-center flex-col ${
+            isMobileMenuVisible ? `navbar-open` : null
+          }`}
+        >
           <Outlet />
-          <Footer />
-        </main>
+          <Footer />{" "}
+        </motion.main>
       </div>
     </>
   );
