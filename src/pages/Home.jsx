@@ -4,7 +4,7 @@ import { FAQ } from "./FAQ";
 
 import "../App.css";
 import hero from "../assets/Hero.jpg";
-import hero2 from "../assets/hero2.jpg";
+// import herobg from "../assets/hero_bg.jpg";
 import cushion from "../assets/Cushion.png";
 
 import sulfate from "../assets/sulfate-free.jpg";
@@ -29,7 +29,6 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      {" "}
       {/* swiperslider */}
       <section className="h-[400px]  min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
         <div className="w-full h-fit flex justify-center">
