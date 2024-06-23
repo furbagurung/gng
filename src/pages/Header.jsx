@@ -729,12 +729,18 @@ function MobileHeader() {
             animate={isMobileMenuVisible ? "open" : "closed"}
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.3 }}
-            className="-z-50"
+            className="sticky top-0 -z-50"
           >
-            {isMobileMenuVisible ? <NavBar /> : null}
+            <motion.div
+              animate={hidden ? "notShowing" : "showing"}
+              variants={variants}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+            >
+              {isMobileMenuVisible ? <NavBar /> : null}
+            </motion.div>
           </motion.div>
         </header>
-
+        {/* for smooth outlet animation when mobile navbar changes */}
         <motion.main
           animate={isMobileMenuVisible ? "open" : "closed"}
           variants={mainVariants}
