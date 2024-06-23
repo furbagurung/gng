@@ -1,5 +1,6 @@
 import "../App.css";
 import logo from "../assets/logo.svg";
+import logoWhite from "../assets/logo_white.svg";
 // import { Bars3Icon } from "@heroicons/react/24/solid";
 import {
   Bars3Icon,
@@ -77,15 +78,26 @@ function MobileHeader() {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="w-full"
           >
-            <div className="z-10 bg-white w-full flex justify-center">
+            <div className="z-10 bg-white w-full  justify-center hidden lg:flex">
               <NavLink to="/" className=" flex items-center h-10 w-20 my-4">
                 <img src={logo} alt="Gossip and Giggles Logo" />
               </NavLink>
             </div>
             <div className="sticky top-0  z-10 bg-neutral-900 w-full h-14 flex items-center justify-center lg:px-[9rem] px-6">
               <div className="flex items-center justify-start gap-6 sm:justify-between px-5 max-w-[1280px] w-full">
-                <nav className="w-fit ">
-                  {" "}
+                <nav className="w-fit  h-fit flex ">
+                  <div className=" w-full flex lg:hidden   ">
+                    <NavLink
+                      to="/"
+                      className=" flex items-center justify-center "
+                    >
+                      <img
+                        src={logoWhite}
+                        alt="Gossip and Giggles Logo"
+                        className="h-9"
+                      />
+                    </NavLink>
+                  </div>
                   <button
                     type="button"
                     className=" items-center justify-center rounded-md text-white"
