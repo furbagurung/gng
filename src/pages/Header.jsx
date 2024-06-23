@@ -83,7 +83,7 @@ function MobileHeader() {
                 <img src={logo} alt="Gossip and Giggles Logo" />
               </NavLink>
             </div>
-            <div className="sticky top-0  z-10 bg-neutral-900 w-full h-14 flex items-center justify-center lg:px-[9rem] px-6">
+            <div className="sticky top-0  z-50 bg-neutral-900 w-full h-14 flex items-center justify-center lg:px-[9rem] px-6">
               <div className="flex items-center justify-start gap-6 sm:justify-between px-5 max-w-[1280px] w-full">
                 <nav className="w-fit  h-fit flex ">
                   <div className=" w-full flex lg:hidden   ">
@@ -729,7 +729,7 @@ function MobileHeader() {
             animate={isMobileMenuVisible ? "open" : "closed"}
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.3 }}
-            className="-z-5"
+            className="-z-50"
           >
             {isMobileMenuVisible ? <NavBar /> : null}
           </motion.div>
