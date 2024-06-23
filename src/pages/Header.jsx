@@ -735,6 +735,7 @@ function MobileHeader() {
               animate={hidden ? "notShowing" : "showing"}
               variants={variants}
               transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="lg:hidden flex"
             >
               {isMobileMenuVisible ? <NavBar /> : null}
             </motion.div>

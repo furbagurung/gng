@@ -25,12 +25,27 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import ProductCard from "@/components/ui/ProductCard";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import slide1 from "../assets/slides/slide1.jpg";
+import slide2 from "../assets/slides/slide2.jpg";
+import slide3 from "../assets/slides/slide3.jpg";
+import { useState } from "react";
 
 const Home = () => {
+  const slides = [slide1, slide2, slide3];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <>
       {/* swiperslider */}
-      <section className="h-[400px]  min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
+      <section>
+        <div className="w-full max-w-[1440px] h-[500px] lg:h-[585px] py-4 m-auto px-4 relative group">
+          <div
+            style={{ backgroundImage: `url(${slides[currentIndex]})` }}
+            className="w-full h-full bg-no-repeat bg-cover rounded-2xl  bg-center"
+          ></div>
+        </div>
+      </section>
+      {/* <section className="h-[400px]  min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
         <div className="w-full h-fit flex justify-center">
           <img
             src={hero}
@@ -74,7 +89,7 @@ const Home = () => {
             </Button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
       <section className="min-w-[320px] lg:h-[375px] h-[650px] grid bg-[#f8edeb;]  w-full justify-center relative p-4">
         <div className=" lg:w-full grid justify-center gap-4 py-16 mb-6 ">
           <motion.h1
