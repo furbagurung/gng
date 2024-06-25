@@ -46,12 +46,15 @@ const Home = () => {
         </div>
       </section> */}
 
-      <section className="h-[450px] mt-20 sm:mt-0 min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
+      <section className="h-[500px] pt-20 sm:pt-0 min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
         <div className="w-full h-fit flex justify-center">
-          <img
+          <motion.img
+            initial={{ y: "-100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
             src={hero}
             className=" w-full max-w-[1600px] h-[250px] md:h-[500px] object-cover md:object-contain"
-          ></img>
+          />
         </div>
 
         <div className="min-w-[300px] max-w-[80%] grid  justify-center items-center gap-1 absolute bottom-8">
@@ -382,8 +385,8 @@ const Home = () => {
               <ProductCard
                 className="grid"
                 src={LiquidBlush}
-                title="Gossip and Giggles Liquid Blush"
-                price="$500"
+                title="Cushion BB Cream Foundation"
+                price="$15"
               />
             </motion.li>
 

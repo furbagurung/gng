@@ -23,6 +23,18 @@ export const ProductCard = ({ title, src, price }) => {
           </a>
         </div>
       </div>
+      {/* <div className="group relative overflow-hidden">
+        <div className="overflow-hidden rounded-2xl">
+          <img
+            src={src}
+            className="w-[400px] hover:scale-125  object-cover transition duration-300"
+          />
+        </div>
+        <div className="my-5 relative left-[-200px] group-hover:left-[10px] duration-500">
+          <p className=" text-2xl font-semibold poppins-bold">{title}</p>
+          <p className="text-3xl">{price}</p>
+        </div>
+      </div> */}
     </>
   );
 };
