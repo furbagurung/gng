@@ -32,7 +32,7 @@ const items = [
           },
           {
             key: "2",
-            label: <NavLink to="cushionfoundation">Foundation</NavLink>,
+            label: <NavLink to="foundation">Foundation</NavLink>,
           },
           {
             key: "3",
@@ -44,7 +44,7 @@ const items = [
           },
           {
             key: "5",
-            label: <NavLink to="facepimer">Face Primer</NavLink>,
+            label: <NavLink to="faceprimer">Face Primer</NavLink>,
           },
           {
             key: "6",

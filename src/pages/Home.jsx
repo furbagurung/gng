@@ -16,8 +16,7 @@ import eyeImg from "../assets/eye.jpg";
 import spray from "../assets/spray.jpg";
 import bbc from "../assets/cushion/bbc.png";
 import cheeksImg from "../assets/cheeks.jpg";
-import LiquidBlush from "../assets/LiquidBlush.png";
-import LipOil from "../assets/LipOil.png";
+
 import Mist from "../assets/Mist.png";
 import Stick from "../assets/Stick.png";
 
@@ -26,11 +25,8 @@ import ProductCard from "@/components/ui/ProductCard";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-import girl from "../assets/1.png";
-
 import "swiper/css";
 import "swiper/css/pagination";
-import Caraousel from "./Caraousel";
 
 const Home = () => {
   return (

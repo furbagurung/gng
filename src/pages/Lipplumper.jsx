@@ -29,7 +29,7 @@ function Lipplumper() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Lip Plumper"
         description={description()}
         price={15}
         features={list}

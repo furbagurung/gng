@@ -1,10 +1,10 @@
 import CatalogLayout from "../layouts/CatalogLayout";
 // import img from "../../assets/blusher";
-import i1 from "../assets/cushion/cushion1.webp";
-import i2 from "../assets/cushion/cushion2.webp";
-import i3 from "../assets/cushion/cushion3.webp";
-import i4 from "../assets/cushion/cushion4.webp";
-import i5 from "../assets/cushion/cushion5.webp";
+import i1 from "../assets/lipoil/lipoil.webp";
+import i2 from "../assets/lipoil/lipoil2.webp";
+import i3 from "../assets/lipoil/lipoil3.webp";
+import i4 from "../assets/lipoil/lipoil4.webp";
+// import i5 from "../assets/lipoil/lipoil5.webp";
 
 function Lipoil() {
   const description = () => {
@@ -29,11 +29,11 @@ function Lipoil() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Lip Oil"
         description={description()}
         price={15}
         features={list}
-        img={[i1, i2, i3, i4, i5]}
+        img={[i1, i2, i3, i4]}
       />
     </>
   );

@@ -1,10 +1,10 @@
 import CatalogLayout from "../layouts/CatalogLayout";
 // import img from "../../assets/blusher";
-import i1 from "../assets/cushion/cushion1.webp";
-import i2 from "../assets/cushion/cushion2.webp";
-import i3 from "../assets/cushion/cushion3.webp";
-import i4 from "../assets/cushion/cushion4.webp";
-import i5 from "../assets/cushion/cushion5.webp";
+import i1 from "../assets/faceprimer/faceprimer.webp";
+import i2 from "../assets/faceprimer/faceprimer2.webp";
+import i3 from "../assets/faceprimer/faceprimer3.webp";
+import i4 from "../assets/faceprimer/faceprimer4.webp";
+import i5 from "../assets/faceprimer/faceprimer5.webp";
 
 function Faceprimer() {
   const description = () => {
@@ -29,7 +29,7 @@ function Faceprimer() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Face Primer"
         description={description()}
         price={15}
         features={list}

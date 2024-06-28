@@ -4,6 +4,11 @@ import { FAQ } from "@/pages/FAQ";
 
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+import faceImg from "../assets/face.jpg";
+import eyeImg from "../assets/eye.jpg";
+import cheeksImg from "../assets/cheeks.jpg";
 
 const CatalogLayout = ({ title, img, price, description, features }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -26,10 +31,10 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
               <h1 className="uppercase">{title}</h1>
             </div>
             <div className=" sm:text-center flex justify-center w-[320px] sm:w-full">
-              <p>
+              <span>
                 Ready to start your next project with us? That&apos;s great!
                 Send us an message
-              </p>
+              </span>
             </div>
           </div>
         </div>
@@ -73,28 +78,23 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                 <div>
                   <h1 className="max-w-[600px]">
                     <span className="text-4xl font-bold">
-                      Gossip and Giggles Cushion Foundation
+                      Gossip and Giggles {title}
                     </span>
                   </h1>
-                  <p>
-                    <span className="text-sm font-normal text-neutral-500">
-                      Category: Face
-                    </span>
-                  </p>
+
+                  <span className="text-sm font-normal text-neutral-500">
+                    Category: Face
+                  </span>
                 </div>
                 <div>
-                  <p>
-                    <span className="font-bold text-3xl">$15</span>
-                  </p>
+                  <span className="font-bold text-3xl">$ {price}</span>
                 </div>
                 <div className="flex flex-wrap gap-8 flex-col">
                   <div className="flex flex-col gap-4">
                     {" "}
-                    <p>
-                      <span className="font-bold">Shades:</span>
-                    </p>
+                    <span className="font-bold">Shades:</span>
                     <div className="flex gap-4">
-                      <p
+                      <span
                         onMouseOver={() => setCurrentImage(3)}
                         onClick={() => {
                           setCurrentImage(3);
@@ -107,8 +107,8 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                       `}
                       >
                         Shade 1
-                      </p>
-                      <p
+                      </span>
+                      <span
                         onMouseOver={() => setCurrentImage(4)}
                         onClick={() => {
                           setCurrentImage(4);
@@ -121,8 +121,8 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                       `}
                       >
                         Shade 2
-                      </p>
-                      <p
+                      </span>
+                      <span
                         onMouseOver={() => setCurrentImage(5)}
                         onClick={() => {
                           setCurrentImage(5);
@@ -135,15 +135,17 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                       `}
                       >
                         Shade 3
-                      </p>
+                      </span>
                     </div>
                   </div>
 
                   <div>
-                    <Button>Business Inquiries</Button>
+                    <NavLink to="../contact">
+                      <Button>Business Inquiries</Button>
+                    </NavLink>
                   </div>
                   <div>
-                    <p className="max-w-[500px]">{description}</p>
+                    <span className="max-w-[500px]">{description}</span>
                   </div>
                 </div>
               </div>
@@ -202,36 +204,24 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
         </section>
         <section className="grid grid-cols-2 sm:flex flex-wrap justify-center items-center gap-4 bg-white sm:w-full p-4 py-16">
           <div className="col-span-2 w-full text-2xl flex justify-center  font-semibold p-4">
-            <h2 className="w-[800px]">Explore other Categories</h2>
+            <h2 className="w-[800px]">Explore other Products</h2>
           </div>
-          <CategoryCard
-            title="Face"
-            src="https://via.placeholder.com/616x640"
-          />
-          <CategoryCard
-            title="Face"
-            src="https://via.placeholder.com/616x640"
-          />{" "}
-          <CategoryCard
-            title="Face"
-            src="https://via.placeholder.com/616x640"
-          />{" "}
-          <CategoryCard
-            title="Face"
-            src="https://via.placeholder.com/616x640"
-          />
+          <CategoryCard title="Face" src={faceImg} />
+          <CategoryCard title="eye" src={eyeImg} />{" "}
+          <CategoryCard title="Cheeks" src={cheeksImg} />{" "}
+          <CategoryCard title="mist" src={faceImg} />
         </section>
         <section className="text-white bg-black flex flex-col w-full relative pb-11 p-4 ">
           <div className="  w-full grid gap-4 py-16 ">
-            <h1 className="font-bold md:text-4xl text-3xl justify-center lg:text-center text-left leading-tight  poppins-bold racking-tight">
-              <p className=" leading-tight justify-center px-1 lg:flex grid sm:text-center text-left poppins-bold ">
+            <div className="font-bold md:text-4xl text-3xl justify-center lg:text-center text-left leading-tight  poppins-bold racking-tight">
+              <span className=" leading-tight justify-center px-1 lg:flex grid sm:text-center text-left poppins-bold ">
                 Frequently Asked Questions
-              </p>
-            </h1>
-            <p className=" leading-tight justify-center px-1 lg:flex grid sm:text-center text-left text-[16px] font-medium poppins-regular text-gray-400">
+              </span>
+            </div>
+            <span className=" leading-tight justify-center px-1 lg:flex grid sm:text-center text-left text-[16px] font-medium poppins-regular text-gray-400">
               If you haven&apos;t found the answer you need, email us at&nbsp;{" "}
               gossipandgiggles@gmail.com
-            </p>
+            </span>
           </div>
 
           <div className="w-full flex justify-center">

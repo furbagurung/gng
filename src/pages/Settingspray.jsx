@@ -36,7 +36,7 @@ function Settingspray() {
   return (
     <>
       <CatalogLayout
-        title="settingspray"
+        title="setting spray"
         description={description()}
         price={13}
         features={list}

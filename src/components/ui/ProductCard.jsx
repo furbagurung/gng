@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 // import { motion } from "framer-motion";
-import { Button } from "./button";
 // import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 import BuyNow from "@/components/ui/BuyNow";
 import { NavLink } from "react-router-dom";

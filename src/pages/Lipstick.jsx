@@ -1,10 +1,10 @@
 import CatalogLayout from "../layouts/CatalogLayout";
 // import img from "../../assets/blusher";
-import i1 from "../assets/cushion/cushion1.webp";
-import i2 from "../assets/cushion/cushion2.webp";
-import i3 from "../assets/cushion/cushion3.webp";
-import i4 from "../assets/cushion/cushion4.webp";
-import i5 from "../assets/cushion/cushion5.webp";
+import i1 from "../assets/lipstick/lipstick.webp";
+import i2 from "../assets/lipstick/lipstick2.webp";
+import i3 from "../assets/lipstick/lipstick3.webp";
+import i4 from "../assets/lipstick/lipstick4.webp";
+import i5 from "../assets/lipstick/lipstick5.webp";
 
 function Lipstick() {
   const description = () => {
@@ -29,7 +29,7 @@ function Lipstick() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Lip Stick"
         description={description()}
         price={15}
         features={list}

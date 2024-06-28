@@ -29,7 +29,7 @@ function Colorcorrectingpalette() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Color Correcting Paletter"
         description={description()}
         price={15}
         features={list}

@@ -29,7 +29,7 @@ function Bronzer() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Bronzer"
         description={description()}
         price={15}
         features={list}

@@ -29,7 +29,7 @@ function Lipliner() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Lip Liner"
         description={description()}
         price={15}
         features={list}

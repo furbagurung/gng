@@ -102,7 +102,7 @@ const router = createBrowserRouter(
         <Route path="eyebrow" element={<Eyebrow />} />
         <Route path="lipoil" element={<Lipoil />} />
         <Route path="lipbalm" element={<Lipbalm />} />
-        <Route path="lipstick" element={<Lipstick />} />
+        <Route path="lipsticks" element={<Lipstick />} />
         <Route path="lipgloss" element={<Lipgloss />} />
         <Route path="lipliner" element={<Lipliner />} />
         <Route path="lipplumper" element={<Lipplumper />} />

@@ -1,10 +1,10 @@
 import CatalogLayout from "../layouts/CatalogLayout";
 // import img from "../../assets/blusher";
-import i1 from "../assets/cushion/cushion1.webp";
-import i2 from "../assets/cushion/cushion2.webp";
-import i3 from "../assets/cushion/cushion3.webp";
-import i4 from "../assets/cushion/cushion4.webp";
-import i5 from "../assets/cushion/cushion5.webp";
+import i1 from "../assets/concealer/concealer1.webp";
+import i2 from "../assets/concealer/concealer2.webp";
+import i3 from "../assets/concealer/concealer3.webp";
+import i4 from "../assets/concealer/concealer4.webp";
+import i5 from "../assets/concealer/concealer5.webp";
 
 function Concealer() {
   const description = () => {
@@ -29,7 +29,7 @@ function Concealer() {
   return (
     <>
       <CatalogLayout
-        title="Eye Brow"
+        title="Concealer"
         description={description()}
         price={15}
         features={list}

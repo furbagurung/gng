@@ -11,10 +11,8 @@ import {
   PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/solid";
 
-import Footer from "./Footer";
-
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
@@ -43,11 +41,11 @@ function Contact() {
   return (
     <>
       {/* <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+<label>Name</label>
         <input type="text" name="user_name" />
-        <label>Email</label>
+<label>Email</label>
         <input type="email" name="user_email" />
-        <label>Message</label>
+<label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form> */}
@@ -70,23 +68,23 @@ function Contact() {
             <Card className="border-0 sm:p-6 max-w-96 grid md:flex bg-white  poppins-regular pb-6">
               <form ref={form} onSubmit={sendEmail}>
                 <CardContent className="grid py-1 gap-4 pt-6 sm:w-96">
-                  <Label>Name *</Label>
+                  <label>Name *</label>
                   <Input
                     type="text"
                     name="user_name"
                     placeholder="Your Name"
                     required
                   />
-                  <Label>Email *</Label>
+                  <label>Email *</label>
                   <Input
                     ttype="email"
                     name="user_email"
                     placeholder="Your Email"
                     required
                   />
-                  <Label>Subject *</Label>
+                  <label>Subject *</label>
                   <Input type="text" placeholder="Your Subject" required />
-                  <Label htmlFor="message">Your message *</Label>
+                  <label htmlFor="message">Your message *</label>
                   <Textarea
                     placeholder="Type your message here."
                     id="message"
