@@ -32,6 +32,7 @@ function MobileHeader() {
       setHidden(false);
     }
   });
+
   // for mobile navbar animation
   const variants = {
     open: { opacity: 1, y: 0 },
@@ -53,6 +54,7 @@ function MobileHeader() {
   useEffect(() => {
     setMobileMenuVisible(false);
     setIsDesktopMenuHovered(false);
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
