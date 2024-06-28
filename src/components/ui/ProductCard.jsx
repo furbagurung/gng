@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Button } from "./button";
 // import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 import BuyNow from "@/components/ui/BuyNow";
+import { NavLink } from "react-router-dom";
 
 export const ProductCard = ({ title, src, price }) => {
   return (
@@ -16,11 +17,11 @@ export const ProductCard = ({ title, src, price }) => {
             <p className=" poppins-regular leading-tight">{title}</p>
             <p className=" poppins-bold">{price}</p>
           </div>
-          <a href="#" className="w-full justify-center">
+          <NavLink to="contact" className="w-full justify-center">
             <div className="w-full flex gap-4">
               <BuyNow price={price} className="w-full" />
             </div>
-          </a>
+          </NavLink>
         </div>
       </div>
       {/* <div className="group relative overflow-hidden">

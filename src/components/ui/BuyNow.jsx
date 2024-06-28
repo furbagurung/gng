@@ -4,7 +4,7 @@ const BuyNow = ({ price }) => {
   return (
     <div data-tooltip={price} className="button w-full bg-black">
       <div className="button-wrapper">
-        <div className="text">Buy Now</div>
+        <div className="text">Contact Now</div>
         <span className="icon">
           <svg
             viewBox="0 0 16 16"

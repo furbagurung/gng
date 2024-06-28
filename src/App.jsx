@@ -69,6 +69,7 @@ import Lipplumper from "@/pages/Lipplumper.jsx";
 import Lipstick from "@/pages/Lipstick.jsx";
 import Mascara from "@/pages/Mascara.jsx";
 import SettingSpray from "@/pages/Settingspray.jsx";
+import Thankyou from "./pages/thankyou.jsx";
 // import RouteLayout from "./layouts/RouteLayout.jsx";
 
 const router = createBrowserRouter(
@@ -107,6 +108,7 @@ const router = createBrowserRouter(
         <Route path="lipplumper" element={<Lipplumper />} />
         <Route path="gossipevents" element={<Gossipevents />} />
         <Route path="gossipmemories" element={<Gossipmemories />} />
+        <Route path="thankyou" element={<Thankyou />} />
 
         <Route path="gallery" element={<Gallery />} />
         <Route path="cart" element={<Cart />} />

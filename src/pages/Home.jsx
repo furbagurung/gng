@@ -13,6 +13,8 @@ import certificate from "../assets/certificate.png";
 
 import faceImg from "../assets/face.jpg";
 import eyeImg from "../assets/eye.jpg";
+import spray from "../assets/spray.jpg";
+import bbc from "../assets/cushion/bbc.png";
 import cheeksImg from "../assets/cheeks.jpg";
 import LiquidBlush from "../assets/LiquidBlush.png";
 import LipOil from "../assets/LipOil.png";
@@ -112,7 +114,8 @@ const Home = () => {
             transition={{ delay: 0.2, duration: 0.9 }}
             className=" leading-tight flex  text-center text-[14px] font-medium poppins-regular"
           >
-            Shop now the best bb cream cushion foundation
+            Shop now the best bb cream cushion foundation with Gossip and
+            Giggles
           </motion.p>
         </div>
         <motion.ul className="z-10 lg:w-full w-fit lg:flex grid grid-cols-2 justify-center gap-0 p-2 ">
@@ -384,7 +387,7 @@ const Home = () => {
               {" "}
               <ProductCard
                 className="grid"
-                src={LiquidBlush}
+                src={bbc}
                 title="Cushion BB Cream Foundation"
                 price="$15"
               />
@@ -398,9 +401,9 @@ const Home = () => {
             >
               {" "}
               <ProductCard
-                src={LipOil}
-                title="Gossip and Giggles Liquid Blush"
-                price="$200"
+                src={spray}
+                title="Gossip and Giggles Setup Spray"
+                price="$18"
               />
             </motion.li>
 
@@ -414,7 +417,7 @@ const Home = () => {
               <ProductCard
                 src={Stick}
                 title="Gossip and Giggles Liquid Blush"
-                price="$100"
+                price="$10"
               />
             </motion.li>
 
@@ -427,7 +430,7 @@ const Home = () => {
               <ProductCard
                 src={Mist}
                 title="Gossip and Giggles Hair Fragrance Mist"
-                price="$300"
+                price="$30"
               />
             </motion.li>
           </ul>
