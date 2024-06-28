@@ -150,17 +150,17 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
             </div>
           </div>
         </section>{" "}
-        <section className="flex flex-wrap gap-4 min-w-[300px] justify-center p-12 sm:p-12 bg-slate-500 sm:w-full ">
+        <section className="flex flex-wrap gap-4 min-w-[300px] justify-center p-12 sm:p-12500 sm:w-full ">
           {/* content start */}
 
           {/* description start*/}
 
-          <div className="flex flex-col flex-wrap max-w-[1200px] border justify-center items-center w-[800px]  xl:w-full ">
-            <div className="self-stretch min-w-[300px] w-fit sm:w-[800px] xl:w-full bg-red-400 text-black text-base font-normal leading-normal">
+          <div className="flex flex-col flex-wrap max-w-[1200px]  justify-center items-center w-[800px]  xl:w-full ">
+            <div className="self-stretch min-w-[300px] w-fit sm:w-[800px] xl:w-full text-black text-base font-normal leading-normal">
               <h2 className="text-xl font-semibold">
                 Features of Gossip & Giggles {title}:
               </h2>
-              <ul className="sm:w-full bg-green-400 pl-4 p-2 list-disc">
+              <ul className="sm:w-full pl-4 p-2 list-disc">
                 {features.map((list, index) => (
                   <li key={index}>{list}</li>
                 ))}

@@ -94,7 +94,7 @@ function Contact() {
                     required
                   />
                   <Button>
-                    <NavLink to="thankyou">
+                    <NavLink to="../thankyou">
                       <input type="submit" value="Send" />
                     </NavLink>
                   </Button>
