@@ -1,19 +1,9 @@
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
   EnvelopeIcon,
   MapPinIcon,
   PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/solid";
 
-import { Input } from "@/components/ui/input";
-
-import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -65,27 +55,34 @@ function Contact() {
         <div className="w-full flex justify-center">
           <div className="sm:w-fit sm:flex flex-row-reverse md:flex rounded-3xl gap-2 justify-center sm:gap-4 bg-white  p-4 max-w-[1200px]">
             {" "}
-            <Card className="border-0 sm:p-6 max-w-96 grid md:flex bg-white  poppins-regular pb-6">
+            <div className="border-0 sm:p-6 max-w-96 grid md:flex bg-white gap-[] poppins-regular pb-6">
               <form ref={form} onSubmit={sendEmail}>
-                <CardContent className="grid py-1 gap-4 pt-6 sm:w-96">
-                  <label>Name *</label>
-                  <Input
+                <div className="grid py-1 gap-4 pt-6 sm:w-96">
+                  <input
+                    className=" border py-[9px] px-[20px] rounded-lg"
                     type="text"
                     name="user_name"
-                    placeholder="Your Name"
+                    placeholder="Your Name *"
                     required
                   />
-                  <label>Email *</label>
-                  <Input
-                    ttype="email"
+
+                  <input
+                    className=" border py-[9px] px-[20px] rounded-lg"
+                    type="email"
                     name="user_email"
                     placeholder="Your Email"
                     required
                   />
-                  <label>Subject *</label>
-                  <Input type="text" placeholder="Your Subject" required />
-                  <label htmlFor="message">Your message *</label>
-                  <Textarea
+
+                  <input
+                    className=" border py-[9px] px-[20px] rounded-lg"
+                    type="text"
+                    placeholder="Your Subject"
+                    required
+                  />
+
+                  <textarea
+                    className=" border py-[9px] px-[20px] rounded-lg h-[137px]"
                     placeholder="Type your message here."
                     id="message"
                     name="message"
@@ -96,21 +93,22 @@ function Contact() {
                       <input type="submit" value="Send" />
                     </NavLink>
                   </Button>
-                </CardContent>
+                </div>
               </form>
-            </Card>
-            <Card className="w-[300px] sm:w-full max-w-96 grid md:flex justify-start bg-black text-white sm:p-6 poppins-regular">
-              <CardHeader className="w-[250px] sm:w-fit">
-                <CardTitle className="w-[250px] sm:w-fit">Contact Us</CardTitle>
-                <CardDescription className="py-6 w-[250px] sm:w-full text-gray-400 grid gap-4">
-                  {" "}
-                  Ready to start your next project with us? That&apos;s great!
-                  Send us an message
+            </div>
+            <div className="w-[300px] sm:w-full max-w-96 grid md:flex gap-[18px] justify-start bg-black text-white  poppins-regular rounded-2xl p-7 sm:p-[35px]">
+              <div className="w-[250px] sm:w-fit">
+                <h1 className="w-[250px] sm:w-fit text-[21px]">
+                  Contact Information
+                </h1>
+                <div className="py-6 w-[250px] sm:w-full text-gray-400 grid gap-4">
+                  We believe in building a long term connection and providing
+                  the best services.
                   <div className="text-sm  text-white">
                     <p>Gossip & Giggles Cosmetics Co.Ltd.</p>
                   </div>
-                </CardDescription>
-                <CardContent className="grid w-fit p-4 pl-0 gap-6 text-gray-400">
+                </div>
+                <div className="grid w-fit p-4 pl-0 gap-6 text-gray-400">
                   <div className="flex justify-start gap-4 items-center w-[200px] sm:w-full">
                     <PhoneArrowDownLeftIcon className="h-4 w-4 " />
                     <div>
@@ -130,9 +128,9 @@ function Contact() {
                       <p>China Merchant City, Guangzhou, Guangdong, China</p>
                     </div>
                   </div>
-                </CardContent>
-              </CardHeader>
-            </Card>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

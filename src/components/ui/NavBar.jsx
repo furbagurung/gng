@@ -165,7 +165,7 @@ const items = [
   },
   {
     key: "sub5",
-    label: "Contact Us",
+    label: <NavLink to="contact">Contact Us</NavLink>,
     icon: <PhoneArrowDownLeftIcon className="h-4 w-4" />,
   },
 ];
