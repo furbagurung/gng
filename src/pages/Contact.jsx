@@ -112,7 +112,7 @@ function Contact() {
                   <div className="flex justify-start gap-4 items-center w-[200px] sm:w-full">
                     <PhoneArrowDownLeftIcon className="h-4 w-4 " />
                     <div>
-                      <p>+866&nbsp;18000455998</p>
+                      <p>+86&nbsp;18000455998</p>
                       {/* <p>+977 9876543210</p> */}
                     </div>
                   </div>
