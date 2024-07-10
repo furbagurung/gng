@@ -1,7 +1,7 @@
 import {
   EnvelopeIcon,
   MapPinIcon,
-  PhoneArrowDownLeftIcon,
+  // PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/solid";
 
 import { Button } from "@/components/ui/button";
@@ -109,17 +109,39 @@ function Contact() {
                   </div>
                 </div>
                 <div className="grid w-fit p-4 pl-0 gap-6 text-gray-400">
-                  <div className="flex justify-start gap-4 items-center w-[200px] sm:w-full">
+                  {/* <div className="flex justify-start gap-4 items-center w-[200px] sm:w-full">
                     <PhoneArrowDownLeftIcon className="h-4 w-4 " />
                     <div>
                       <p>+86&nbsp;18000455998</p>
-                      {/* <p>+977 9876543210</p> */}
                     </div>
-                  </div>
-                  <div className="flex justify-start gap-4 text-[14px]  sm:w-full items-center">
-                    <EnvelopeIcon className="h-4 w-4 " />
+                  </div> */}
+                  <div className="flex justify-start gap-4 text-[14px] items-start  sm:w-full ">
+                    <EnvelopeIcon className="h-4 w-4 mt-1" />
                     <div className="sm:text-sm w-fit">
-                      <p>gossipandgiggles@gmail.com</p>
+                      <p>
+                        <a
+                          href="mailto:admin@gossipandgiggles.com"
+                          className="underline"
+                        >
+                          admin@gossipandgiggles.com
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="mailto:info@gossipandgiggles.com"
+                          className="underline"
+                        >
+                          info@gossipandgiggles.com
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="mailto:gossipandgigglesofficial@gmail.com"
+                          className="underline"
+                        >
+                          gossipandgigglesofficial@gmail.com
+                        </a>
+                      </p>
                     </div>
                   </div>
                   <div className="flex justify-start items-start gap-4  w-[200px] sm:w-full">

@@ -11,36 +11,58 @@ function Settingspray() {
     return (
       <>
         <p>
-          Lipstick, a beloved cosmetic product, adds color and moisture to the
-          lips, enhancing their natural beauty. Available in a wide range of
-          shades and finishes, lipsticks offer endless possibilities for
-          creating different looks and styles. They come in creamy, matte,
-          satin, and glossy formulas, providing options for various preferences
-          and occasions. Lipsticks are known for their pigmentation, smooth
-          application, and long-lasting wear. With a single swipe, they can
-          transform the lips, adding a touch of glamour and completing any
-          makeup look. From bold and vibrant to subtle and natural, lipsticks
-          are a staple in every makeup collection, allowing individuals to
-          express their personal style and boost their confidence.
+          Hydrating fixer setting spray; get hydrated and dewy skin while fixing
+          your makeup all day.
+        </p>
+
+        <p>
+          Long-lasting and lightweight formulation that quickly melts into your
+          skin.
+        </p>
+
+        <p>
+          Receive 16hrs of wear, our setting spray delivers waterproof,
+          sweatproof results you can count on to lock in your look.
+        </p>
+
+        <p>
+          Quick drying and easy fixing. Refreshes your skin while providing glow
+          to your skin.
+        </p>
+      </>
+    );
+  };
+  const direction = () => {
+    return (
+      <>
+        <p>
+          Shake it up and down, let it sit for 3 seconds before use. <br />
+          Hold bottle 12 inches away from face and close eyes. Spray it in “ X”
+          and “T” directions repeatedly (about 3 to 5 times) until your face is
+          fully wet.
         </p>
       </>
     );
   };
   const list = [
-    "Highly Pigmented",
-    "Blends effortlessly",
-    "Gives cheeks a healthy glow that&apos;s so soft and radiant",
-    "It's refreshing sheer hue brightens your complexion and gives cheeks a natural, delicate gleam",
+    "Hydrating Dewy Finish: Keeps skin hydrated with a dewy look.",
+    "Long-lasting: Provides 16 hours of wear.",
+    "Waterproof: Provides waterproof, sweatproof results you can count on to",
+    "Quick Drying: Sets makeup fast for easy application.",
+    "Refreshing Glow: Refreshes and enhances skin's natural glow.",
   ];
 
   return (
     <>
       <CatalogLayout
-        title="setting spray"
+        title="Set It Now Setting Spray"
         description={description()}
+        netwt="100 ML / 3.38 fl.oz"
         price={13}
         features={list}
         img={[i1, i2, i3, i4, i5]}
+        direction={direction()}
+        shades={false}
       />
     </>
   );

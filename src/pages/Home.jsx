@@ -1,6 +1,7 @@
 import CategoryCard from "@/components/ui/CategoryCard";
 import { FAQ } from "./FAQ";
 // import CaraouselSlider from "@/components/ui/CaraouselSlider";
+import Marquee from "react-fast-marquee";
 
 import "../App.css";
 import hero from "../assets/Hero.jpg";
@@ -17,6 +18,15 @@ import spray from "../assets/spray.jpg";
 import bbc from "../assets/cushion/bbc.png";
 import cheeksImg from "../assets/cheeks.jpg";
 
+//gif
+import blushGif from "@/assets/gif/blush.gif";
+import lipbalmGif from "@/assets/gif/lip-balm.gif";
+import eyelashesGif from "@/assets/gif/eyelashes.gif";
+import cosmeticsGif from "@/assets/gif/cosmetics.gif";
+import powderGif from "@/assets/gif/powder.gif";
+import boxGif from "@/assets/gif/box.gif";
+import manufactureGif from "@/assets/gif/manufacture.gif";
+
 import Mist from "../assets/Mist.png";
 import Stick from "../assets/Stick.png";
 
@@ -27,23 +37,11 @@ import { NavLink } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { ISO } from "@/components/iso";
 
 const Home = () => {
   return (
     <>
-      {/* <div>
-        <Caraousel />
-      </div> */}
-      {/* swiperslider */}
-      {/* <section>
-        <div className="w-full max-w-[1440px] h-[500px] lg:h-[585px] py-4 m-auto px-4 relative group">
-          <div
-            style={{ backgroundImage: `url(${slides[currentIndex]})` }}
-            className="w-full h-full bg-no-repeat bg-cover rounded-2xl  bg-center"
-          ></div>
-        </div>
-      </section> */}
-
       <section className="h-[500px] pt-20 sm:pt-0 min-w-[320px] md:h-[500px] bg-[#f6f7fb] flex justify-center w-full relative ">
         <div className="w-full h-fit flex justify-center">
           <motion.img
@@ -92,6 +90,67 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+      {/* //what we produce */}
+      <section className="min-w-[320px] sm:h-[650px] grid w-full justify-center items-center bg-f relative p-8 sm:pb-60 bg-white">
+        <div className=" lg:w-full grid justify-center gap-4 py-16 mb-6 ">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9 }}
+            className="text-4xl  text-center lg:text-4xl leading-tight  poppins-bold  tracking-tight"
+          >
+            What we produce?
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.9 }}
+            className=" leading-tight flex  text-center text-[14px] font-medium poppins-regular"
+          >
+            Our cosmetics are current with trends and are of the newest
+            technologies available
+          </motion.p>
+        </div>
+        <motion.ul className="z-10 lg:w-full sm:w-fit sm:flex grid justify-center gap-4 p-2 w-full">
+          <motion.li
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.9 }}
+            className="grid items-center gap-6 justify-center  border rounded-xl sm:w-[250px] pb-6"
+          >
+            <img src={blushGif} className="w-[200px]" />
+            <p className="text-xl  justify-center flex opacity-50">
+              Face Makeup
+            </p>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.9 }}
+            className="grid items-center gap-6 justify-center border rounded-xl w-[250px] pb-6"
+          >
+            <img src={eyelashesGif} className="w-[200px]" />
+            <p className="text-xl justify-center flex opacity-50">Eyes Makup</p>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.9 }}
+            className="grid items-center gap-6 justify-center  border rounded-xl w-[250px] pb-6"
+          >
+            <img src={lipbalmGif} className="w-[200px]" />
+            <p className="text-xl justify-center flex opacity-50">
+              Face Makeup
+            </p>
+          </motion.li>
+        </motion.ul>
+      </section>
+      {/* Shop our collection */}
       <section className="min-w-[320px] lg:h-[375px] h-[650px] grid bg-[#f8edeb;]  w-full justify-center relative p-4">
         <div className=" lg:w-full grid justify-center gap-4 py-16 mb-6 ">
           <motion.h1
@@ -252,105 +311,130 @@ const Home = () => {
           ></img>
         </motion.div>
       </motion.section>
-      {/* <section
-        className="w-full flex justify-center bg-slate-100
-      "
-      >
-        <div className="w-[1634px] h-[900px] relative">
-          <div className="w-[1600px]  left-[34px] top-0 absolute bg-slate-100" />
-          <div className="w-[1110px] h-32 left-[279px] top-[902px] absolute"></div>
-          <div className="w-[409px] h-[134px] left-[849px] top-[351px] absolute">
-            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
-              Organized tasks
-            </div>
-            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page.
-            </div>
-            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
-              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-red-500 rounded-[15px]" />
-              <div className="w-[35px] h-[37px] left-[22px] top-[21px] absolute"></div>
-            </div>
-          </div>
-          <div className="w-[409px] h-[134px] left-[390px] top-[351px] absolute">
-            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
-              Dedicated project manager
-            </div>
-            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page.
-            </div>
-            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
-              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-indigo-600 rounded-[15px]" />
-              <div className="w-[35px] h-[38px] left-[22px] top-[21px] absolute">
-                <img
-                  className="w-5 h-[23px] left-[8px] top-0 absolute"
-                  src="https://via.placeholder.com/20x23"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="w-[409px] h-[134px] left-[849px] top-[565px] absolute">
-            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
-              Never miss deadline
-            </div>
-            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page.
-            </div>
-            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
-              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-gray-900 rounded-[15px]" />
-              <div className="w-9 h-9 left-[22px] top-[22px] absolute">
-                <img
-                  className="w-9 h-9 left-0 top-0 absolute opacity-50"
-                  src="https://via.placeholder.com/36x36"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="w-[409px] h-[134px] left-[390px] top-[565px] absolute">
-            <div className="left-[109px] top-0 absolute text-gray-900 text-[21px] font-bold   leading-loose">
-              Easy feedback sharing
-            </div>
-            <div className="w-[300px] left-[109px] top-[47px] absolute opacity-70 text-gray-900 text-[17px] font-normal   leading-[29px]">
-              With lots of unique blocks, you can easily build a page without
-              coding. Build your next landing page.
-            </div>
-            <div className="w-[79px] h-[79px] left-0 top-[6px] absolute">
-              <div className="w-[79px] h-[79px] left-0 top-0 absolute opacity-10 bg-green-400 rounded-[15px]" />
-              <div className="w-9 h-[34px] left-[22px] top-[23px] absolute"></div>
-            </div>
-          </div>
-          <div className="w-[589px] h-[135px] left-[540px] top-[118px] absolute flex-col justify-center items-center gap-[23px] inline-flex">
-            <div className="w-[589px] text-center text-red-500 text-[13px] font-bold   uppercase tracking-widest">
-              Why choose us
-            </div>
-            <div className="w-[521px] text-center text-gray-900 text-4xl font-bold   leading-[48px]">
-              People choose us because we serve the best for everyone
-            </div>
-          </div>
-          <div className="w-[123px] h-28 left-0 top-[167px] absolute">
-            <div className="w-[7px] h-2 left-[116px] top-[13px] absolute"></div>
-            <div className="w-[7px] h-[7px] left-[116px] top-0 absolute"></div>
-            <div className="w-[7px] h-[7px] left-[116px] top-[27px] absolute"></div>
-            <div className="w-[7px] h-[7px] left-[116px] top-[40px] absolute"></div>
-            <div className="w-[7px] h-[7px] left-[116px] top-[53px] absolute"></div>
-            <div className="w-[7px] h-[7px] left-[116px] top-[66px] absolute"></div>
-            <div className="w-[7px] h-2 left-[116px] top-[79px] absolute"></div>
-            <div className="w-[7px] h-[7px] left-[116px] top-[93px] absolute"></div>
-            <div className="w-1.5 h-1.5 left-0 top-[106px] absolute"></div>
-            <div className="w-2 h-1.5 left-[32px] top-[106px] absolute"></div>
-            <div className="w-[7px] h-1.5 left-[16px] top-[106px] absolute"></div>
-            <div className="w-[7px] h-1.5 left-[49px] top-[106px] absolute"></div>
-            <div className="w-[7px] h-1.5 left-[66px] top-[106px] absolute"></div>
-            <div className="w-[7px] h-1.5 left-[99px] top-[106px] absolute"></div>
-            <div className="w-2 h-1.5 left-[82px] top-[106px] absolute"></div>
-            <div className="w-[7px] h-1.5 left-[116px] top-[106px] absolute"></div>
-          </div>
+      {/* what we do customized service */}
+      <section className="w-full flex-col justify-center  bg-slate-100 items-center gap-6 p-4 pb-6 py-10">
+        <div className="w-full p-9   flex-col justify-center items-center gap-1 inline-flex">
+          <motion.h1
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.02, duration: 0.5 }}
+            className=" text-center poppins-bold text-[#e37ca9] uppercase "
+          >
+            what we do
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.03, duration: 0.5 }}
+            className="text-center text-gray-900 text-4xl font-bold"
+          >
+            Customized services
+          </motion.p>
         </div>
-      </section> */}
+        <motion.ul className=" grid justify-center p-6">
+          <div className="lg:w-full max-w-[1400px] sm:w-fit sm:flex flex-wrap grid justify-center gap-4 p-2 pb-9 w-full">
+            {" "}
+            <motion.li
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.9 }}
+              className="flex items-start justify-center rounded-xl w-fit gap-4 p-4 sm:p-6 bg-gray-50"
+            >
+              <div className="p-2 ">
+                <img src={powderGif} className="min-w-[40px] w-10 rounded-lg" />
+              </div>
+              <div className="grid w-[240px] sm:w-[400px]  shrink-0 items-start justify-start gap-2">
+                <h2 className="text-xl font-bold justify-start flex ">
+                  Custom Formulas
+                </h2>
+                <p className="text-sm">
+                  We create special beauty product recipes just for you. Whether
+                  it&apos;s skincare, haircare, or makeup, we work with you to
+                  make products that match your brand and quality needs.
+                </p>
+              </div>
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.9 }}
+              className="flex items-start justify-center rounded-xl w-fit gap-4 p-4 sm:p-6 bg-gray-50"
+            >
+              <div className="p-2">
+                <img
+                  src={cosmeticsGif}
+                  className="min-w-[40px]  w-10 rounded-lg"
+                />
+              </div>
+              <div className="grid w-[240px] sm:w-[400px]  shrink-0 items-start justify-start gap-2">
+                <h2 className="text-xl font-bold justify-start flex ">
+                  Private Label
+                </h2>
+                <p className="text-sm">
+                  Start your own beauty line with our help. We handle everything
+                  from creating the product to designing the packaging, making
+                  it easy for you to launch your brand.
+                </p>
+              </div>
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.9 }}
+              className="flex items-start justify-center rounded-xl w-fit gap-4 p-4 sm:p-6 bg-gray-50"
+            >
+              <div className="p-2 bg-blend-multiply">
+                <img src={boxGif} className="min-w-[40px]  w-10  rounded-lg" />
+              </div>
+              <div className="grid  w-[240px] sm:w-[400px]  shrink-0 items-start justify-start gap-2">
+                <h2 className="text-xl font-bold justify-start flex ">
+                  Packaging Options
+                </h2>
+                <p className="text-sm">
+                  Choose from various packaging designs to suit your brand. We
+                  offer different shapes, sizes, and materials to make your
+                  products look great and stand out.
+                </p>
+              </div>
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.9 }}
+              className="flex  items-start justify-center rounded-xl w-fit gap-6 p-2 sm:p-6 bg-gray-50"
+            >
+              <div className="p-2">
+                <img
+                  src={manufactureGif}
+                  className="min-w-[40px]  w-10 rounded-lg"
+                />
+              </div>
+              <div className="grid w-[240px] sm:w-[400px] shrink-0 items-start justify-start gap-2">
+                <h2 className="text-xl font-bold justify-start flex ">
+                  Flexible Production
+                </h2>
+                <p className="text-sm">
+                  We can produce both small and large orders to meet your needs.
+                  Our modern facilities ensure quick delivery and high-quality
+                  products, whether you need a few items or a large batch.
+                </p>
+              </div>
+            </motion.li>
+          </div>
+        </motion.ul>
+      </section>
+      {/* iso */}
+      <div className="z-10 h-[100px] sm:h-[200px] p-6 my-10 overflow-y-hidden  justify-center flex items-center w-full">
+        <ISO />
+      </div>
       {/* Best Selling */}
-      <section className=" h-fit flex flex-col relative bg-[#f8edeb] w-full items-center p-4">
+      <section className=" h-fit flex flex-col relative  w-full items-center p-4">
         <div className="  w-full flex flex-col justify-center items-center gap-4 pt-[100px]">
           <motion.h1
             initial={{ opacity: 0, y: 250 }}

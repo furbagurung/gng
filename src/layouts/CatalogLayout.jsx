@@ -10,7 +10,22 @@ import faceImg from "../assets/face.jpg";
 import eyeImg from "../assets/eye.jpg";
 import cheeksImg from "../assets/cheeks.jpg";
 
-const CatalogLayout = ({ title, img, price, description, features }) => {
+const CatalogLayout = ({
+  title,
+  img,
+  price,
+  netwt,
+  description,
+  direction,
+  features,
+  shades,
+  shade1,
+  shade2,
+  shade3,
+  shade4,
+  shade5,
+  shade6,
+}) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const ProductImages = img;
@@ -20,6 +35,15 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
     img: PropTypes.array,
     price: PropTypes.number,
     description: PropTypes.string,
+    netwt: PropTypes.string,
+    direction: PropTypes.object,
+    shades: PropTypes.number,
+    shade3: PropTypes.string,
+    shade1: PropTypes.string,
+    shade2: PropTypes.string,
+    shade4: PropTypes.string,
+    shade5: PropTypes.string,
+    shade6: PropTypes.string,
     features: PropTypes.object,
   };
   return (
@@ -90,7 +114,12 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                   <span className="font-bold text-3xl">$ {price}</span>
                 </div>
                 <div className="flex flex-wrap gap-8 flex-col">
-                  <div className="flex flex-col gap-4">
+                  {/* Shades section */}
+                  <div
+                    className={`${
+                      shades === 1 ? `flex` : `hidden`
+                    } flex-col gap-4`}
+                  >
                     {" "}
                     <span className="font-bold">Shades:</span>
                     <div className="flex gap-4">
@@ -106,7 +135,7 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                         }
                       `}
                       >
-                        Shade 1
+                        {shade1}
                       </span>
                       <span
                         onMouseOver={() => setCurrentImage(4)}
@@ -120,22 +149,70 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                         }
                       `}
                       >
-                        Shade 2
+                        {shade2}
                       </span>
                       <span
-                        onMouseOver={() => setCurrentImage(5)}
+                        onMouseOver={() => setCurrentImage(2)}
                         onClick={() => {
-                          setCurrentImage(5);
+                          setCurrentImage(2);
                         }}
                         className={`w-fit border rounded-full px-3 hover:text-white cursor-pointer ${
-                          currentImage === 5
+                          currentImage === 2
                             ? `bg-neutral-700 text-white  transition`
                             : ` border-solid border-neutral-400  text-neutral-600 hover:bg-neutral-700 transition`
                         }
                       `}
                       >
-                        Shade 3
+                        {shade3}
                       </span>
+                      {shade4 ? (
+                        <span
+                          onMouseOver={() => setCurrentImage(5)}
+                          onClick={() => {
+                            setCurrentImage(5);
+                          }}
+                          className={`w-fit border rounded-full px-3 hover:text-white cursor-pointer ${
+                            currentImage === 5
+                              ? `bg-neutral-700 text-white  transition`
+                              : ` border-solid border-neutral-400  text-neutral-600 hover:bg-neutral-700 transition`
+                          }
+                      `}
+                        >
+                          {shade4}
+                        </span>
+                      ) : null}
+                      {shade5 ? (
+                        <span
+                          onMouseOver={() => setCurrentImage(6)}
+                          onClick={() => {
+                            setCurrentImage(6);
+                          }}
+                          className={`w-fit border rounded-full px-3 hover:text-white cursor-pointer ${
+                            currentImage === 6
+                              ? `bg-neutral-700 text-white  transition`
+                              : ` border-solid border-neutral-400  text-neutral-600 hover:bg-neutral-700 transition`
+                          }
+                      `}
+                        >
+                          {shade5}
+                        </span>
+                      ) : null}
+                      {shade6 ? (
+                        <span
+                          onMouseOver={() => setCurrentImage(0)}
+                          onClick={() => {
+                            setCurrentImage(0);
+                          }}
+                          className={`w-fit border rounded-full px-3 hover:text-white cursor-pointer ${
+                            currentImage === 0
+                              ? `bg-neutral-700 text-white  transition`
+                              : ` border-solid border-neutral-400  text-neutral-600 hover:bg-neutral-700 transition`
+                          }
+                      `}
+                        >
+                          {shade6}
+                        </span>
+                      ) : null}
                     </div>
                   </div>
 
@@ -144,8 +221,12 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
                       <Button>Business Inquiries</Button>
                     </NavLink>
                   </div>
+                  {/* description start*/}
+                  <span className="max-w-[500px] ">
+                    <b>Netweight: {netwt}</b>
+                  </span>
                   <div>
-                    <span className="max-w-[500px]">{description}</span>
+                    <span className="max-w-[500px] ">{description}</span>
                   </div>
                 </div>
               </div>
@@ -155,9 +236,13 @@ const CatalogLayout = ({ title, img, price, description, features }) => {
         <section className="flex flex-wrap gap-4 min-w-[300px] justify-center p-12 sm:p-12500 sm:w-full ">
           {/* content start */}
 
-          {/* description start*/}
-
           <div className="flex flex-col flex-wrap max-w-[1200px]  justify-center items-center w-[800px]  xl:w-full ">
+            <div className="self-stretch min-w-[300px] w-fit sm:w-[800px] xl:w-full mb-6 text-black text-base font-normal leading-normal">
+              <h2 className="text-xl font-semibold">Directions for use:</h2>
+              <div>
+                <p>{direction}</p>
+              </div>
+            </div>
             <div className="self-stretch min-w-[300px] w-fit sm:w-[800px] xl:w-full text-black text-base font-normal leading-normal">
               <h2 className="text-xl font-semibold">
                 Features of Gossip & Giggles {title}:
